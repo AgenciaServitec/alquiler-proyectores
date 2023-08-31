@@ -18,21 +18,21 @@ export const Cards = () => {
         <div className="content-img">
           <ItemServices
             img={AlquilerProyector}
-            precio="1h x $/.45"
+            precio="1h x S/.45"
             title="Alquiler X Horas"
-            contents={["✱ Pago Aparte $/.100 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+            contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
           />
           <ItemServices
             img={AlquilerProyector1}
-            precio="3h x $/.120"
+            precio="3h x S/.65"
             title="Promociones X Horas"
-            contents={["✱ Pago Aparte $/.100 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+            contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
           />
           <ItemServices
               img={AlquilerProyector2}
-              precio="1d x $/.250"
+              precio="1 Dia x S/.180"
               title="Alquiler X Dias"
-              contents={["✱ Pago Aparte $/.100 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+              contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
           />
         </div>
         <div className="button">

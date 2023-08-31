@@ -92,29 +92,14 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
               }
             >
               <a
-                href="https://www.facebook.com/Servitec.chorrillos/"
+                href="https://www.facebook.com/profile.php?id=100089655876010"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </li>
-            <li
-              onClick={() =>
-                onEventGaClickIcon(
-                  "click-icon-youtube-FNMfFy4iKvg",
-                  "Click icon youtube https://youtu.be/FNMfFy4iKvg"
-                )
-              }
-            >
-              <a
-                href="https://youtu.be/FNMfFy4iKvg"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-            </li>
+
           </ul>
         </div>
         <div className="items-contacts">
@@ -134,7 +119,7 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
               <a href="tel:+51941801827" target="_blank" rel="noreferrer">
                 941 801 827
               </a>
-              <p> Horarios : Lunes a Vierner<br/> de 10:00am a 5:00pm</p>
+              <p> Horarios : Lunes a Viernes<br/> de 10:00am a 7:00pm</p>
             </div>
           </div>
 
@@ -182,7 +167,7 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
               >
                 Chorrillos, Perú
               </a>
-              <p>Jr.Justor Pastor Davila 117 </p>
+              <p>Calle Nestor Bermúdez 113 </p>
 
             </div>
           </div>
