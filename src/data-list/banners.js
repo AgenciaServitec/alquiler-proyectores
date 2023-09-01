@@ -2,9 +2,9 @@ import {BannerCarousel1, BannerCarousel2, BannerCarousel3, BannerCarousel4, Bann
 
 
 export const Banners = [
-    BannerCarousel1,
+         BannerCarousel1,
     BannerCarousel2,
-    BannerCarousel3,
+             BannerCarousel3,
     BannerCarousel4,
     BannerCarousel5,
 ]

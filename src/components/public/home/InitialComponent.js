@@ -19,6 +19,13 @@ export const InitialComponent = () => {
           <div className="wrapper-form">
             <FormContact />
           </div>
+            <div className="button">
+                <button
+                    text="Cotizar"
+                    type="secondary"
+
+                />
+            </div>
         </div>
       </div>
     </Container>
@@ -121,6 +128,13 @@ const Container = styled.section`
         border-radius: 10px;
         padding: 1.5rem 2rem;
         color: ${({ theme }) => theme.colors.dark};
+      }
+      .button{
+        font-size: 1.5em;
+        color: red ;
+        width: 180px;
+        height: 80px;
+        
       }
     }
   }

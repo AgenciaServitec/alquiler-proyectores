@@ -31,7 +31,7 @@ export const BaseLayout = ({ children }) => {
                 <div className="item-logo">
                   <img
                     src={LogoServitec}
-                    alt="Logo Servitec Facil Factura"
+                    alt="Logo Servitec"
                     onClick={() => navigate("/")}
                   />
                 </div>
@@ -46,7 +46,7 @@ export const BaseLayout = ({ children }) => {
               <div className="menu-list">
                 <div className="logo-img">
                   <Link to="/">
-                    <img src={LogoServitec} alt="Logo Servitec Facil Factura" />
+                    <img src={LogoServitec} alt="Logo Servitec" />
                   </Link>
                 </div>
                 <nav className="list">
