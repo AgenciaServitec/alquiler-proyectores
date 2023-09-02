@@ -15,15 +15,18 @@
 }
 
 @font-face {
-  font-family: 'Intro Demo';
+  font-family: "Intro Demo";
   font-style: normal;
   font-weight: 400;
-  src: local('Intro Demo'), url('https://fonts.cdnfonts.com/s/12893/IntroDemoBlackCaps.woff') format('woff');
+  src: local("Intro Demo"),
+    url("https://fonts.cdnfonts.com/s/12893/IntroDemoBlackCaps.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'Intro Demo';
+  font-family: "Intro Demo";
   font-style: normal;
   font-weight: 400;
-  src: local('Intro Demo'), url('https://fonts.cdnfonts.com/s/12893/IntroDemoBlackCapsInline.woff') format('woff');
+  src: local("Intro Demo"),
+    url("https://fonts.cdnfonts.com/s/12893/IntroDemoBlackCapsInline.woff")
+      format("woff");
 }
-

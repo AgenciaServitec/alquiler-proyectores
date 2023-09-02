@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { mediaQuery } from "../../../styles/constants/mediaQuery";
 
-import {CarouselBanners} from "./CarouselBanners";
-import {Banners} from "../../../data-list/banners";
-
+import { CarouselBanners } from "./CarouselBanners";
+import { Banners } from "../../../data-list/banners";
 
 export const VideoSection = () => (
   <Container id="nosotros">
     <div className="content-video">
-<CarouselBanners Banners={Banners} />
+      <CarouselBanners Banners={Banners} />
     </div>
     {/*  <div className="wrapper-iframe">
           <iframe title = "map"
@@ -19,7 +18,6 @@ export const VideoSection = () => (
       </div>*/}
   </Container>
 );
-
 
 const Container = styled.div`
   width: 100%;

@@ -10,7 +10,9 @@ export const InitialComponent = () => {
       <div className="content-items">
         <div className="content">
           <div className="heading">
-            <h2 className="description">ALQUILER DE PROYECTORES DE ALTA DEFINICIÓN</h2>
+            <h2 className="description">
+              ALQUILER DE PROYECTORES DE ALTA DEFINICIÓN
+            </h2>
             {/*<h3>MANTENIMIENTO Y REPARACIÓN</h3>*/}
             {/*<h3>¡Tenemos lo que necesita!</h3>*/}
           </div>
@@ -19,13 +21,9 @@ export const InitialComponent = () => {
           <div className="wrapper-form">
             <FormContact />
           </div>
-            <div className="button">
-                <button
-                    text="Cotizar"
-                    type="secondary"
-
-                />
-            </div>
+          <div className="button">
+            <button text="Cotizar" type="secondary" />
+          </div>
         </div>
       </div>
     </Container>
@@ -116,7 +114,7 @@ const Container = styled.section`
       margin-top: 1rem;
       text-align: center;
       justify-self: center;
-      margin-right: 6rem ;
+      margin-right: 6rem;
       width: 20rem;
       ${mediaQuery.minTablet} {
         width: auto;
@@ -129,12 +127,11 @@ const Container = styled.section`
         padding: 1.5rem 2rem;
         color: ${({ theme }) => theme.colors.dark};
       }
-      .button{
+      .button {
         font-size: 1.5em;
-        color: red ;
+        color: red;
         width: 180px;
         height: 80px;
-        
       }
     }
   }

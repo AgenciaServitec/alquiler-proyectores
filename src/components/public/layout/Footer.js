@@ -99,7 +99,6 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </li>
-
           </ul>
         </div>
         <div className="items-contacts">
@@ -119,7 +118,11 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
               <a href="tel:+51941801827" target="_blank" rel="noreferrer">
                 941 801 827
               </a>
-              <p> Horarios : Lunes a Viernes<br/> de 10:00am a 7:00pm</p>
+              <p>
+                {" "}
+                Horarios : Lunes a Viernes
+                <br /> de 10:00am a 7:00pm
+              </p>
             </div>
           </div>
 
@@ -168,7 +171,6 @@ export const Footer = ({ onEventGaClickIcon, onEventGaClickLink }) => (
                 Chorrillos, Perú
               </a>
               <p>Calle Nestor Bermúdez 113 </p>
-
             </div>
           </div>
         </div>

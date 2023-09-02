@@ -57,9 +57,9 @@ export const BaseLayout = ({ children }) => {
                     <a href="#nosotros">
                       <li>NOSOTROS</li>
                     </a>
-                      <a href="#ofertas-de-pago">
-                          <li>OFERTAS DE PAGO</li>
-                      </a>
+                    <a href="#ofertas-de-pago">
+                      <li>OFERTAS DE PAGO</li>
+                    </a>
                     <a href="#footer">
                       <li>CONTACTÁCNOS</li>
                     </a>
@@ -153,7 +153,7 @@ const Container = styled.div`
 
     .menu-list {
       display: flex;
-      padding: .2em 2em;
+      padding: 0.2em 2em;
 
       .logo-img {
         width: 40%;
@@ -165,7 +165,7 @@ const Container = styled.div`
           width: 14rem;
         }
       }
-      
+
       .list {
         width: 60%;
         display: flex;
@@ -199,7 +199,7 @@ const Container = styled.div`
 
     .menu-mobile {
       width: 100%;
-      color: ${({theme}) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.white};
       display: grid;
       grid-template-columns: 85% 1fr;
       .item-logo {

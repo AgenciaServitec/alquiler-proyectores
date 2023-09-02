@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  AlquilerProyector, AlquilerProyector1, AlquilerProyector2,
+  AlquilerProyector,
+  AlquilerProyector1,
+  AlquilerProyector2,
 } from "../../../images";
 import { mediaQuery } from "../../../styles/constants/mediaQuery";
 import { Button } from "../ui";
@@ -20,19 +22,28 @@ export const Cards = () => {
             img={AlquilerProyector}
             precio="1h x S/.45"
             title="Alquiler X Horas"
-            contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+            contents={[
+              "✱ Pago Aparte S/.150 por garantia del producto entregados.",
+              "✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
+            ]}
           />
           <ItemServices
             img={AlquilerProyector1}
             precio="3h x S/.65"
             title="Promociones X Horas"
-            contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+            contents={[
+              "✱ Pago Aparte S/.150 por garantia del producto entregados.",
+              "✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
+            ]}
           />
           <ItemServices
-              img={AlquilerProyector2}
-              precio="1 Dia x S/.180"
-              title="Alquiler X Dias"
-              contents={["✱ Pago Aparte S/.150 por garantia del producto entregados.","✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado."]}
+            img={AlquilerProyector2}
+            precio="1 Dia x S/.180"
+            title="Alquiler X Dias"
+            contents={[
+              "✱ Pago Aparte S/.150 por garantia del producto entregados.",
+              "✱ Se hace entrega del producto en nuestro mismo local si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
+            ]}
           />
         </div>
         <div className="button">
@@ -60,7 +71,7 @@ const Container = styled.div`
   background: ${({ theme }) => theme.colors.tertiary};
   padding: 1rem;
   ${mediaQuery.minTablet} {
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
   }
   z-index: 9;
 
@@ -71,7 +82,6 @@ const Container = styled.div`
     }
     .heading {
       margin-bottom: 60px;
-   
       position: relative;
       text-align: center;
       width: 100%;
@@ -79,8 +89,8 @@ const Container = styled.div`
         left: 0;
         text-align: center;
         width: 100%;
-        font-size: 3.5rem;
-        margin-bottom: 0rem;
+        font-size: 2.5em;
+        margin-bottom: 0em;
       }
       .subtitle {
         font-family: "Intro Demo", sans-serif;
@@ -92,12 +102,12 @@ const Container = styled.div`
     }
     .content-img {
       display: flex;
-      justify-content: space-evenly;
-      gap: 2rem;
+      justify-content: center;
+      gap: 1.5em;
       flex-wrap: wrap;
     }
     .button {
-      padding-top: 1.4rem;
+      padding-top: 1.4em;
       width: 100%;
       display: flex;
       justify-content: center;
