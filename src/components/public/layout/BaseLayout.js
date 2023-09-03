@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {useDevice} from "../../../hooks";
 import {Drawer} from "./Drawer";
-import {Footer} from "./Footer";
 import {ButtonsFloating} from "../ui";
 import {useNavigate} from "react-router";
 import {Header} from "./Header";
+import {FooterNew} from "./FooterNew";
 
 export const BaseLayout = ({children}) => {
     const {isMobile} = useDevice();
@@ -21,7 +21,7 @@ export const BaseLayout = ({children}) => {
             />
             <Header isMobile={isMobile} onSetVisibleDrawer={setVisibleDrawer} onNavigate={navigate}/>
             <main className="body">{children}</main>
-            <Footer/>
+            <FooterNew/>
             <ButtonsFloating/>
         </Container>
     );

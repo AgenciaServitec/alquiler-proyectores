@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {BrandsSection, InitialComponent,} from "../../components/public";
-
+import {BrandsSection,InitialComponent,} from "../../components/public";
 
 export const Home = () => {
   return (
