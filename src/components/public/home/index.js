@@ -6,3 +6,4 @@ export * from "./VideoSection";
 export * from "./ItemServices";
 export * from "./AboutUs";
 export * from "./Img";
+export * from "./BrandsSection";

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import {InitialComponent,} from "../../components/public";
-import {FooterNew} from "../../components/public/layout/FooterNew";
+import {BrandsSection,InitialComponent,} from "../../components/public";
 
 export const Home = () => {
   return (
     <>
       <Container>
         <InitialComponent />
+          <BrandsSection/>
 
       </Container>
     </>

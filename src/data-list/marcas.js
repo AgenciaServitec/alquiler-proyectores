@@ -6,7 +6,7 @@ import {
   CarouselMarca5,
 } from "../images";
 
-export const marcas = [
+export const brands = [
   CarouselMarca1,
   CarouselMarca2,
   CarouselMarca3,
