@@ -1,24 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  InitialComponent,
-  AboutUs,
-  Cards,
-  VideoSection,
-  ImgSectionComponent,
-} from "../../components/public";
-import { CarouselMarcas } from "../../components/public/home/CarouselMarcas";
-import { marcas } from "../../data-list/marcas";
+import {InitialComponent,} from "../../components/public";
 
-export const Home = ({ onEventGaClickButton, onEventGaClickVideos }) => {
+export const Home = () => {
   return (
     <>
       <Container>
         <InitialComponent />
-        <CarouselMarcas marcas={marcas} />
-        <VideoSection />
-        <Cards />
-        <ImgSectionComponent />
       </Container>
     </>
   );
