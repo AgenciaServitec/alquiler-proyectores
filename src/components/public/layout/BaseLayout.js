@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {useDevice} from "../../../hooks";
 import {Drawer} from "./Drawer";
-import {Footer} from "./Footer";
 import {ButtonsFloating} from "../ui";
 import {useNavigate} from "react-router";
 import {Header} from "./Header";
