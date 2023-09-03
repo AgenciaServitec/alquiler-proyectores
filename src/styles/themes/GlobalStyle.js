@@ -13,7 +13,6 @@ const global = css`
 
   body {
     overflow-x: hidden;
-    font-size: 16px;
     font-family: "MontserratRegular", serif;
   }
 
