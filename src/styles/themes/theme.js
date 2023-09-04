@@ -42,8 +42,8 @@ export const theme = {
     secondary: "#1C1C1C",
 
     font1: "rgb(255,255,255)",
-    font2: "rgb(216,222,236)",
-    font3: "rgb(170,180,193)",
+    font2: "rgb(193,196,207)",
+    font3: "rgb(171,172,174)",
 
     success: "#0ECB81",
     info: "#0795FF",
@@ -53,6 +53,6 @@ export const theme = {
     black: "#090B0D",
     white: "#EAECEF",
     dark: "#090B0D",
-    light: "#d7d8d9"
+    light: "#d7d8d9",
   },
 };

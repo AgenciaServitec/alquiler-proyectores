@@ -51,7 +51,7 @@ const WrapperButton = styled.div`
       margin-left: 0.5rem;
       padding: 0.3rem;
       svg {
-        color: #fff;
+        color: ${({ theme }) => theme.colors.font1};
         font-size: 2.5rem;
         ${mediaQuery.minTablet} {
           font-size: 3rem;
@@ -60,7 +60,7 @@ const WrapperButton = styled.div`
     }
     .item-text {
       font-size: 0.8rem;
-      color: #fff;
+      color: ${({ theme }) => theme.colors.font1};
       div {
         line-height: 1.5rem;
       }

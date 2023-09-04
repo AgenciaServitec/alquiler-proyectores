@@ -58,7 +58,7 @@ const Container = styled.div`
   }
   .content-slide-txt {
     position: absolute;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.font1};
     z-index: 500;
     width: 100%;
     bottom: 20%;
@@ -71,14 +71,14 @@ const Container = styled.div`
       font-size: 2rem;
       line-height: 4rem;
       text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
-      color: #fff;
+      color: ${({ theme }) => theme.colors.font1};
       ${mediaQuery.minDesktop} {
         font-size: 4rem;
         bottom: 30%;
       }
     }
     h2 {
-      color: #fff;
+      color: ${({ theme }) => theme.colors.font1};
       text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
       font-size: 1.5rem;
     }

@@ -13,16 +13,7 @@ const global = css`
 
   body {
     overflow-x: hidden;
-    font-family: "MontserratRegular", serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Intro Demo", sans-serif;
+    background: #000;
   }
 `;
 

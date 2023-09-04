@@ -32,12 +32,4 @@ const Container = styled.div`
   min-height: 100vh;
   height: auto;
   position: relative;
-
-  .footer {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    background: black;
-    color: #fff;
-  }
 `;

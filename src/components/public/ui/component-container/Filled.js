@@ -195,7 +195,7 @@ const Container = styled.div`
     }
 
     input:-webkit-autofill {
-      -webkit-text-fill-color: #fff;
+      -webkit-text-fill-color: ${({ theme }) => theme.colors.font1};
       ${
         value &&
         css`

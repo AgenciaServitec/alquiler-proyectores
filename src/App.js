@@ -1,10 +1,7 @@
-import { Router } from "./router";
-import { AuthenticationProvider, VersionProvider } from "./providers";
+import {Router} from "./router";
 
 const App = () => (
-  <AuthenticationProvider>
     <Router />
-  </AuthenticationProvider>
 );
 
 export default App;
