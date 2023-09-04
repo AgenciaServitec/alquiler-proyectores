@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { BaseLayout } from "../components/public";
+import { BaseLayout } from "../components";
 import { Home, Page404, ContactSuccess } from "../pages";
 
 export const Router = () => {

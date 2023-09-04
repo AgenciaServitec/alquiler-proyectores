@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ImgCongratulation } from "../../images";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
-import { Button } from "../../components/public";
+import { Button } from "../../components";
 import { useNavigate } from "react-router";
 
 export const ContactSuccess = () => {

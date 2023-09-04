@@ -11,7 +11,7 @@ import { isError } from "lodash";
 import { useDocument } from "react-firebase-hooks/firestore";
 import { timeoutPromise } from "../utils";
 import { spinLoaderFixed } from "../utils/loader";
-import { notification } from "../components/public";
+import { notification } from "../components";
 
 const AuthenticationContext = createContext({
   authUser: null,

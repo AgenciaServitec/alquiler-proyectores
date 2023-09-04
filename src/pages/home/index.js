@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import {BrandsSection,InitialComponent,} from "../../components/public";
+import { BrandsSection } from "./BrandsSection";
+import { PresentationSection } from "./PresentationSection";
 
 export const Home = () => {
   return (
     <>
       <Container>
-        <InitialComponent />
-          <BrandsSection/>
-
+        <PresentationSection />
+        <BrandsSection />
       </Container>
     </>
   );

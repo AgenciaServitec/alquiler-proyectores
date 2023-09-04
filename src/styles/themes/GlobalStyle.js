@@ -5,6 +5,7 @@ const global = css`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: ${({ theme }) => theme.colors.font1} !important;
   }
 
   html {
@@ -13,7 +14,7 @@ const global = css`
 
   body {
     overflow-x: hidden;
-    background: #000;
+    background-color: ${({ theme }) => theme.colors.dark} !important;
   }
 `;
 

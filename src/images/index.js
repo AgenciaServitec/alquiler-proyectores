@@ -58,5 +58,7 @@ export * from "./svg/Phone";
 export * from "./svg/Email";
 export * from "./svg/Location";
 
-// -------Multimedia------
-export { default as videoAllinOne } from "./multimedia/video1.mp4";
+// -------WEBP------
+export { default as EllipseImg } from "./webp/ellipse.webp";
+export { default as EllipseToAnimated } from "./webp/ellipse-to-animated.webp";
+export { default as ProjectorPredesign } from "./webp/projector-predesign.webp";

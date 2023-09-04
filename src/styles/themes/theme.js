@@ -42,7 +42,7 @@ export const theme = {
     secondary: "#1C1C1C",
 
     font1: "rgb(255,255,255)",
-    font2: "rgb(193,196,207)",
+    font2: "rgb(208,213,217)",
     font3: "rgb(171,172,174)",
 
     success: "#0ECB81",
