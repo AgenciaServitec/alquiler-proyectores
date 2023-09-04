@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrandsSection } from "./BrandsSection";
 import { PresentationSection } from "./PresentationSection";
+import { ServicesSection } from "./ServicesSection";
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <Container>
         <PresentationSection />
         <BrandsSection />
+        <ServicesSection />
       </Container>
     </>
   );
