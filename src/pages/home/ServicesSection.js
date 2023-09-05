@@ -15,12 +15,7 @@ const Container = styled.div`
   height: auto;
   margin: 2em 0;
   padding: 3em;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  overflow: hidden;
 
   .container-services-carousel {
     overflow: visible;

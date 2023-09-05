@@ -8,6 +8,7 @@ import {
   BannerCarousel5,
 } from "../../images";
 import styled from "styled-components";
+import { mediaQuery } from "../../styles/constants/mediaQuery";
 
 export const ServicesCarousel = ({ isMobile }) => {
   const servicesImages = [
@@ -43,25 +44,25 @@ export const ServicesCarousel = ({ isMobile }) => {
             desktop: {
               breakpoint: {
                 max: 3000,
-                min: 1024,
-              },
-              items: 4,
-              partialVisibilityGutter: 40,
-            },
-            mobile: {
-              breakpoint: {
-                max: 464,
-                min: 0,
+                min: 1124,
               },
               items: 2,
               partialVisibilityGutter: 30,
             },
             tablet: {
               breakpoint: {
-                max: 1024,
+                max: 1124,
                 min: 564,
               },
-              items: 4,
+              items: 1,
+              partialVisibilityGutter: 30,
+            },
+            mobile: {
+              breakpoint: {
+                max: 464,
+                min: 0,
+              },
+              items: 1,
               partialVisibilityGutter: 30,
             },
           }}
@@ -75,8 +76,12 @@ export const ServicesCarousel = ({ isMobile }) => {
           swipeable
           style={{ overflow: "visible" }}
         >
-          {servicesImages.map((serviceImage, index) => (
-            <img src={serviceImage.img} alt="alquiler proyectores" />
+          {servicesImages.map((serviceImage) => (
+            <li key={serviceImage.id}>
+              <div className="item-img">
+                <img src={serviceImage.img} alt="alquiler proyectores" />
+              </div>
+            </li>
           ))}
         </Carousel>
       </ul>
@@ -92,12 +97,22 @@ const Container = styled.div`
   .list-cards {
     list-style: none;
     padding: 0;
-    overflow: hidden;
-    img {
-      border-radius: 1em;
-      width: 37em;
-      height: auto;
-      object-fit: contain;
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      .item-img {
+        border-radius: 1em;
+        overflow: hidden;
+        width: 100%;
+        max-width: 40em;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
     }
   }
 

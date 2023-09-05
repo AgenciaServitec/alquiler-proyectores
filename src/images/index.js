@@ -30,11 +30,11 @@ export { default as CarouselMarca4 } from "./others/vector.webp";
 export { default as CarouselMarca5 } from "./others/vector-1.webp";
 
 //-------- Banners Carrousel ------
-export { default as BannerCarousel1 } from "./others/bannerAlquiler.webp";
-export { default as BannerCarousel2 } from "./others/bannerAlquiler2.webp";
-export { default as BannerCarousel3 } from "./others/bannerAlquiler3.webp";
-export { default as BannerCarousel4 } from "./others/bannerAlquiler4.webp";
-export { default as BannerCarousel5 } from "./others/bannerAlquiler5.webp";
+export { default as BannerCarousel1 } from "./webp/banneralquiler.webp";
+export { default as BannerCarousel2 } from "./webp/banneralquiler2.webp";
+export { default as BannerCarousel3 } from "./webp/banneralquiler3.webp";
+export { default as BannerCarousel4 } from "./webp/banneralquiler4.webp";
+export { default as BannerCarousel5 } from "./webp/banneralquiler5.webp";
 
 //----- Alquiler Proyectores ------
 
