@@ -46,20 +46,20 @@ export const ServicesCarousel = ({ isMobile }) => {
                 max: 3000,
                 min: 1124,
               },
-              items: 2,
+              items: 3,
               partialVisibilityGutter: 30,
             },
             tablet: {
               breakpoint: {
                 max: 1124,
-                min: 564,
+                min: 664,
               },
-              items: 1,
+              items: 2,
               partialVisibilityGutter: 30,
             },
             mobile: {
               breakpoint: {
-                max: 464,
+                max: 664,
                 min: 0,
               },
               items: 1,
@@ -98,15 +98,19 @@ const Container = styled.div`
     list-style: none;
     padding: 0;
     width: 100%;
+
     li {
       display: flex;
       justify-content: center;
       padding: 1em;
+
       .item-img {
         border-radius: 1em;
         overflow: hidden;
         width: 100%;
         max-width: 40em;
+        border: 1px solid #818181;
+
         img {
           width: 100%;
           height: auto;

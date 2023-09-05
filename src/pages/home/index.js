@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { BrandsSection } from "./BrandsSection";
 import { PresentationSection } from "./PresentationSection";
 import { ServicesSection } from "./ServicesSection";
+import { AboutUsPlans } from "./AboutUsPlans";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
         <PresentationSection />
         <BrandsSection />
         <ServicesSection />
+        <AboutUsPlans />
       </Container>
     </>
   );
@@ -19,5 +21,4 @@ export const Home = () => {
 const Container = styled.div`
   width: 100%;
   height: auto;
-  background: #fff;
 `;

@@ -1,26 +1,6 @@
 // ------Img Servitec-------
 export { default as LogoServitec } from "./others/logo-servitec.webp";
 export { default as UniverseBackground } from "./others/backgrpund-proyectores.webp";
-export { default as ImageAbout } from "./others/content-about-as.webp";
-export { default as OffersServitec } from "./others/offers1.webp";
-export { default as SeoOne } from "./others/info-box7.webp";
-export { default as SeoTwo } from "./others/info-box8.webp";
-export { default as SeoThree } from "./others/info-box9.webp";
-export { default as ServitecSlider1 } from "./others/servitec-slider2.webp";
-export { default as ServitecSlider4 } from "./others/servitec-slider4.webp";
-export { default as ServitecSlider2 } from "./others/servitec-slider1.webp";
-export { default as ServitecSlider3 } from "./others/servitec-slider3.webp";
-export { default as ImgCongratulation } from "./others/congratulation.webp";
-
-// ------Img Servitec Factura Facil-------
-export { default as ImgLogoFacturaFacil } from "./others/logo-factura.webp";
-export { default as ImgCarousel1 } from "./others/img-carousel-girl.webp";
-export { default as ImgAbout } from "./others/facturacion-electronica-peru-sunat.webp";
-export { default as ImgFacturaService1 } from "./others/img-factura1.webp";
-export { default as ImgFacturaService2 } from "./others/img-factura2.webp";
-export { default as ImgFacturaService3 } from "./others/img-factura3.webp";
-export { default as ImgFacturaService4 } from "./others/img-factura4.webp";
-export { default as ImgFacturaService5 } from "./others/info-box10.webp";
 
 // ------Marcas Carrousel-------
 export { default as CarouselMarca1 } from "./others/rectangle-25.webp";
@@ -43,15 +23,7 @@ export { default as AlquilerProyector1 } from "./others/proyector1-1.webp";
 export { default as AlquilerProyector2 } from "./others/epson-laser-l20000-780x405.webp";
 
 //- ---- IMG Section----
-
 export { default as ImgSection } from "./others/alquilerproyector.webp";
-
-// ------Img Servitec Description de proyecto-------
-export { default as DescriptionImage } from "./others/huella.webp";
-export { default as DescriptionImage2 } from "./others/ultimacaja.webp";
-export { default as SectionBanner } from "./others/group-41.webp";
-export { default as BannerDos } from "./others/BannerDos.webp";
-export { default as BannerTres } from "./others/BannerTres.webp";
 
 // -------SVG-------
 export * from "./svg/Phone";
@@ -62,3 +34,6 @@ export * from "./svg/Location";
 export { default as EllipseImg } from "./webp/ellipse.webp";
 export { default as EllipseToAnimated } from "./webp/ellipse-to-animated.webp";
 export { default as ProjectorPredesign } from "./webp/projector-predesign.webp";
+export { default as ImgPlan1 } from "./webp/img-plan-1.webp";
+export { default as ImgPlan2 } from "./webp/img-plan-2.webp";
+export { default as ImgPlan3 } from "./webp/img-plan-3.webp";
