@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faHeart,
-  faLocation,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -44,7 +43,7 @@ export const Footer = () => {
             </div>
             <div className="footer-item">
               <div className="icon-item">
-                <FontAwesomeIcon icon={faLocation} />
+                <FontAwesomeIcon icon={faLocationDot} />
               </div>
               <div className="text-item">
                 <span>Chorrillos, Perú</span>

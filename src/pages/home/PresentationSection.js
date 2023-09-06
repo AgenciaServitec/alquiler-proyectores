@@ -3,13 +3,20 @@ import styled from "styled-components";
 import { EllipseImg, ProjectorPredesign } from "../../images";
 import { Button } from "../../components";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
+import { motion } from "framer-motion";
 
 export const PresentationSection = () => {
   return (
     <Container>
-      <div className="wrapper-contents">
+      <div className="wrapper-contents" id="home-section">
         <div className="left-content">
-          <div className="items">
+          <motion.div
+            className="items"
+            initial={{ x: "-7rem", opacity: "0" }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, type: "spring" }}
+          >
             <div className="item-title">
               <img
                 src={EllipseImg}
@@ -28,11 +35,17 @@ export const PresentationSection = () => {
                 CONTACTAR
               </Button>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="right-content">
+        <motion.div
+          className="right-content"
+          initial={{ x: "7rem", opacity: "0" }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, type: "spring" }}
+        >
           <img src={ProjectorPredesign} alt="Alquiler proyectores - Servitec" />
-        </div>
+        </motion.div>
       </div>
     </Container>
   );

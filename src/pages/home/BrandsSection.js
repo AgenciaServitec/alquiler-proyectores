@@ -1,11 +1,17 @@
 import React from "react";
 import { brands } from "../../data-list/marcas";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const BrandsSection = () => {
   return (
     <Container>
-      <ul className="brands-list">
+      <motion.ul
+        className="brands-list"
+        initial={{ y: "7rem", opacity: "0" }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, type: "spring" }}
+      >
         {brands.map((brand, index) => (
           <li key={index}>
             <div className="item-img">
@@ -13,7 +19,7 @@ export const BrandsSection = () => {
             </div>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </Container>
   );
 };

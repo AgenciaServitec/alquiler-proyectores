@@ -36,16 +36,16 @@ export const Header = ({ isMobile, onSetVisibleDrawer, onNavigate }) => {
               </div>
               <nav className="menu-list">
                 <ul>
-                  <a href="#home">
+                  <a href="#home-section">
                     <li>INICIO</li>
                   </a>
-                  <a href="#about-us">
+                  <a href="#home-section">
                     <li>NOSOTROS</li>
                   </a>
-                  <a href="#plans">
+                  <a href="#plans-section">
                     <li>PLANES</li>
                   </a>
-                  <a href="#contact">
+                  <a href="#plans-section">
                     <li className="btn-primary">CONTACTAR</li>
                   </a>
                 </ul>

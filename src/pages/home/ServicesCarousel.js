@@ -8,6 +8,7 @@ import {
   BannerCarousel5,
 } from "../../images";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ServicesCarousel = ({ isMobile }) => {
   const servicesImages = [
@@ -77,11 +78,15 @@ export const ServicesCarousel = ({ isMobile }) => {
           style={{ overflow: "visible" }}
         >
           {servicesImages.map((serviceImage) => (
-            <li key={serviceImage.id}>
+            <motion.li
+              key={serviceImage.id}
+              transition={{ duration: 0.7, type: "spring" }}
+              whileHover={{ scale: 1.2 }}
+            >
               <div className="item-img">
                 <img src={serviceImage.img} alt="alquiler proyectores" />
               </div>
-            </li>
+            </motion.li>
           ))}
         </Carousel>
       </ul>

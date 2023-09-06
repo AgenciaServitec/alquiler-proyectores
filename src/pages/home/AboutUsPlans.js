@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ImgPlan1, ImgPlan2, ImgPlan3 } from "../../images";
 import { Button } from "../../components";
+import { motion } from "framer-motion";
 
 const features = [
   "Pago Aparte S/.150 por garantía del producto entregados.",
@@ -34,11 +35,18 @@ const plans = [
 
 export const AboutUsPlans = () => {
   return (
-    <Container>
+    <Container id="plans-section">
       <h2>Nuestros planes</h2>
       <div className="wrapper-plans">
         {plans.map((plan) => (
-          <div key={plan.id} className="plan-card">
+          <motion.div
+            key={plan.id}
+            className="plan-card"
+            initial={{ y: "-7rem", opacity: "0" }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, type: "spring" }}
+            whileHover={{ scale: 1.05 }}
+          >
             <div className="img-item">
               <img src={plan.img} alt="alquiler proyector por horas" />
             </div>
@@ -55,7 +63,7 @@ export const AboutUsPlans = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="wrapper-contact-button">
@@ -154,6 +162,6 @@ const Container = styled.div`
   .wrapper-contact-button {
     display: flex;
     justify-content: center;
-    padding-top: 1em;
+    padding-top: 2em;
   }
 `;
