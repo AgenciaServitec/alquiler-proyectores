@@ -22,6 +22,7 @@ export const ServicesCarousel = ({ isMobile }) => {
     <Container>
       <ul className="list-cards">
         <Carousel
+          autoPlay
           infinite
           additionalTransfrom={0}
           arrows={!isMobile}
