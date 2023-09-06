@@ -17,6 +17,7 @@ export const Result = ({
           <h3>{subTitle}</h3>
         </li>
         {extra && <li>{extra}</li>}
+        {status && <li>{status}</li>}
       </ul>
     </Container>
   );

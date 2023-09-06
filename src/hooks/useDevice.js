@@ -11,7 +11,7 @@ export const useDevice = () => {
 
   useMemo(() => {
     const resizeObserver = new ResizeObserver((entries) => {
-      const { clientWidth, clientHeight } = entries[0]?.target;
+      const { clientWidth, clientHeight } = entries[0]?.target || undefined;
 
       setCurrentScreenWidth(clientWidth);
       setCurrentScreenHeight(clientHeight);

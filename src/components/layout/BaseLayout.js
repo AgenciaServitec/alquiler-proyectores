@@ -4,6 +4,8 @@ import { useDevice } from "../../hooks";
 import { Drawer } from "./Drawer";
 import { useNavigate } from "react-router";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
+import { ButtonsFloating } from "../ui";
 
 export const BaseLayout = ({ children }) => {
   const { isMobile } = useDevice();
@@ -23,8 +25,8 @@ export const BaseLayout = ({ children }) => {
         onNavigate={navigate}
       />
       <main className="body">{children}</main>
-      {/*<Footer />*/}
-      {/*<ButtonsFloating />*/}
+      <Footer />
+      <ButtonsFloating />
     </Container>
   );
 };

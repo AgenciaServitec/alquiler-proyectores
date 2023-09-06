@@ -67,15 +67,16 @@ const Container = styled.button`
     color: ${color};
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.5s;
     font-size: 1em;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1, 1);
     ${mediaQuery.minTablet} {
       font-size: 1.2em;
     }
 
     &:hover {
-      box-shadow: 2px 2px 5px #999;
-      transition: 0.5s;
+      transition: all ease-in-out 0.3s;
+      transform: scale(1.05, 1.05);
     }
 
     ${({ disabled }) =>

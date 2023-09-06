@@ -8,7 +8,6 @@ import {
   BannerCarousel5,
 } from "../../images";
 import styled from "styled-components";
-import { mediaQuery } from "../../styles/constants/mediaQuery";
 
 export const ServicesCarousel = ({ isMobile }) => {
   const servicesImages = [

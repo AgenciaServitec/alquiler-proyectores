@@ -137,6 +137,7 @@ const Container = styled.div`
       }
     }
     .right-content {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: start;
