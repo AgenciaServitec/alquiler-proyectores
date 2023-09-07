@@ -25,6 +25,7 @@ export const BrandsSection = () => {
 };
 
 const Container = styled.div`
+  position: relative;
   background: ${({ theme }) => theme.colors.primary};
 
   .brands-list {

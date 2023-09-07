@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { EllipseImg, ProjectorPredesign } from "../../images";
+import {
+  DiamontImg,
+  EllipseImg,
+  EllipseToAnimated,
+  ProjectorPredesign,
+} from "../../images";
 import { Button } from "../../components";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
 import { motion } from "framer-motion";
@@ -44,6 +49,64 @@ export const PresentationSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 2, type: "spring" }}
         >
+          <div className="wrapper-animated">
+            <motion.img
+              src={EllipseToAnimated}
+              alt="alquiler proyectores"
+              className="img-ellipse-animated"
+              animate={{
+                rotate: -360,
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
+            <motion.img
+              src={DiamontImg}
+              alt="alquiler proyectores"
+              className="img-diamond-animated"
+              animate={{
+                rotate: 360,
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
+            <motion.img
+              src={DiamontImg}
+              alt="alquiler proyectores"
+              className="img-diamond-animated-2"
+              animate={{
+                rotate: 360,
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
+            <motion.img
+              src={DiamontImg}
+              alt="alquiler proyectores"
+              className="img-diamond-animated-3"
+              animate={{
+                rotate: 360,
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
+          </div>
           <img src={ProjectorPredesign} alt="Alquiler proyectores - Servitec" />
         </motion.div>
       </div>
@@ -55,6 +118,7 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.dark};
+
   ${mediaQuery.minDesktop} {
     height: 41rem;
   }
@@ -81,24 +145,30 @@ const Container = styled.div`
       align-items: center;
       justify-content: center;
       padding: 2em 1.5em;
+
       ${mediaQuery.minDesktop} {
         padding: 0;
       }
+
       ${mediaQuery.minDesktop} {
         padding: 0;
         justify-content: end;
       }
+
       .items {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 1em;
+
         ${mediaQuery.minDesktop} {
           align-items: start;
         }
+
         .item-title {
           position: relative;
+
           .circle-item {
             position: absolute;
             width: 3.5em;
@@ -112,6 +182,7 @@ const Container = styled.div`
               right: 9em;
             }
           }
+
           h1 {
             width: 100%;
             color: ${({ theme }) => theme.colors.font1};
@@ -120,6 +191,7 @@ const Container = styled.div`
             position: relative;
             z-index: 200;
             text-align: center;
+
             ${mediaQuery.minDesktop} {
               width: 7em;
               text-align: left;
@@ -127,6 +199,7 @@ const Container = styled.div`
             }
           }
         }
+
         .sub-title {
           div {
             width: 17em;
@@ -134,40 +207,93 @@ const Container = styled.div`
             line-height: 1em;
             color: ${({ theme }) => theme.colors.font2};
             text-align: center;
+
             ${mediaQuery.minDesktop} {
               text-align: left;
             }
           }
         }
+
         .btn-item {
           width: 100%;
           display: flex;
           justify-content: center;
+
           ${mediaQuery.minDesktop} {
             justify-content: start;
           }
         }
       }
     }
+
     .right-content {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: start;
       padding: 1em 0;
+
       ${mediaQuery.minTablet} {
         padding: 0;
       }
+
+      .wrapper-animated {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 20px;
+        margin: auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        overflow: hidden;
+        ${mediaQuery.minDesktop} {
+          justify-content: start;
+        }
+        img {
+          position: absolute;
+          margin-top: 2em;
+        }
+        .img-diamond-animated {
+          position: absolute;
+          width: 4em;
+          top: 5em;
+          right: 0;
+          ${mediaQuery.minTablet} {
+            right: 13em;
+          }
+        }
+        .img-diamond-animated-2 {
+          position: absolute;
+          width: 4em;
+          left: 3em;
+          ${mediaQuery.minTablet} {
+            right: 17em;
+          }
+        }
+        .img-diamond-animated-3 {
+          position: absolute;
+          width: 4em;
+          bottom: 5em;
+          right: 27em;
+        }
+      }
+
       img {
+        position: relative;
+        z-index: 200;
         width: 90%;
         object-fit: contain;
         margin: auto;
+
         ${mediaQuery.minMobile} {
           width: 60%;
         }
+
         ${mediaQuery.minTablet} {
           width: 50%;
         }
+
         ${mediaQuery.minDesktop} {
           width: 37em;
           margin: 0;
