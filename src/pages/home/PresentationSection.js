@@ -282,7 +282,7 @@ const Container = styled.div`
           right: 14em;
           ${mediaQuery.minTablet} {
             bottom: 5em;
-            right: 17em;
+            right: 29em;
           }
         }
       }
