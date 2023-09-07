@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   DiamontImg,
   EllipseImg,
-  EllipseToAnimated,
+  EllipseToAnimated2,
   ProjectorPredesign,
 } from "../../images";
 import { Button } from "../../components";
@@ -51,17 +51,18 @@ export const PresentationSection = () => {
         >
           <div className="wrapper-animated">
             <motion.img
-              src={EllipseToAnimated}
+              src={EllipseToAnimated2}
               alt="alquiler proyectores"
               className="img-ellipse-animated"
               animate={{
-                rotate: -360,
+                scale: 1.05,
+                rotate: 360,
               }}
               transition={{
                 duration: 5,
                 repeat: Infinity,
                 repeatType: "loop",
-                ease: "easeInOut",
+                ease: "linear",
               }}
             />
             <motion.img
@@ -69,13 +70,14 @@ export const PresentationSection = () => {
               alt="alquiler proyectores"
               className="img-diamond-animated"
               animate={{
-                rotate: 360,
+                scale: 1.05,
+                rotate: -360,
               }}
               transition={{
                 duration: 5,
                 repeat: Infinity,
                 repeatType: "loop",
-                ease: "easeInOut",
+                ease: "linear",
               }}
             />
             <motion.img
@@ -83,13 +85,14 @@ export const PresentationSection = () => {
               alt="alquiler proyectores"
               className="img-diamond-animated-2"
               animate={{
+                scale: 1.05,
                 rotate: 360,
               }}
               transition={{
                 duration: 5,
                 repeat: Infinity,
                 repeatType: "loop",
-                ease: "easeInOut",
+                ease: "linear",
               }}
             />
             <motion.img
@@ -97,13 +100,14 @@ export const PresentationSection = () => {
               alt="alquiler proyectores"
               className="img-diamond-animated-3"
               animate={{
+                scale: 1.05,
                 rotate: 360,
               }}
               transition={{
                 duration: 5,
                 repeat: Infinity,
                 repeatType: "loop",
-                ease: "easeInOut",
+                ease: "linear",
               }}
             />
           </div>
@@ -130,6 +134,7 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    overflow: hidden;
 
     ${mediaQuery.minDesktop} {
       grid-template-rows: auto;
@@ -246,7 +251,6 @@ const Container = styled.div`
         display: flex;
         align-items: start;
         justify-content: center;
-        overflow: hidden;
         ${mediaQuery.minDesktop} {
           justify-content: start;
         }
@@ -256,7 +260,7 @@ const Container = styled.div`
         }
         .img-diamond-animated {
           position: absolute;
-          width: 4em;
+          width: 3em;
           top: 5em;
           right: 0;
           ${mediaQuery.minTablet} {
@@ -265,7 +269,7 @@ const Container = styled.div`
         }
         .img-diamond-animated-2 {
           position: absolute;
-          width: 4em;
+          width: 3em;
           left: 3em;
           ${mediaQuery.minTablet} {
             right: 17em;
@@ -273,9 +277,13 @@ const Container = styled.div`
         }
         .img-diamond-animated-3 {
           position: absolute;
-          width: 4em;
-          bottom: 5em;
-          right: 27em;
+          width: 3em;
+          bottom: 2em;
+          right: 14em;
+          ${mediaQuery.minTablet} {
+            bottom: 5em;
+            right: 17em;
+          }
         }
       }
 

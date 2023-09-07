@@ -34,6 +34,7 @@ export * from "./svg/Location";
 export { default as EllipseImg } from "./webp/ellipse.webp";
 export { default as DiamontImg } from "./webp/diamont.webp";
 export { default as EllipseToAnimated } from "./webp/ellipse-to-animated.webp";
+export { default as EllipseToAnimated2 } from "./webp/ellipsetoanimated2.webp";
 export { default as ProjectorPredesign } from "./webp/projector-predesign.webp";
 export { default as ImgPlan1 } from "./webp/img-plan-1.webp";
 export { default as ImgPlan2 } from "./webp/img-plan-2.webp";
