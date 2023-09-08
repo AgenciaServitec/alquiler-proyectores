@@ -44,9 +44,9 @@ export const Header = ({
                   <a href="#home-section">
                     <li>INICIO</li>
                   </a>
-                  <a href="#home-section">
+                  {/* <a href="#home-section">
                     <li>NOSOTROS</li>
-                  </a>
+                  </a>*/}
                   <a href="#plans-section">
                     <li>PLANES</li>
                   </a>
