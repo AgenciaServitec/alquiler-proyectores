@@ -104,6 +104,7 @@ const Container = styled.div`
       width: 100%;
       max-width: 22em;
       height: auto;
+      background: ${({ theme }) => theme.colors.dark};
       border: 1px solid #aeaeae;
       border-radius: 1em;
       overflow: hidden;

@@ -4,20 +4,40 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const BrandsSection = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.7,
+        staggerChildren: 0.4,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <Container>
       <motion.ul
         className="brands-list"
-        initial={{ y: "7rem", opacity: "0" }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, type: "spring" }}
+        variants={container}
+        initial="hidden"
+        animate="visible"
       >
         {brands.map((brand, index) => (
-          <li key={index}>
+          <motion.li key={index} className="item" variants={item}>
             <div className="item-img">
-              <img src={brand} alt="marca servitec" />
+              <img src={brand} alt="marca proyectores" />
             </div>
-          </li>
+          </motion.li>
         ))}
       </motion.ul>
     </Container>
