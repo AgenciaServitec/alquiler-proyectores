@@ -176,7 +176,7 @@ const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.black};
     color: ${({ theme }) => theme.colors.font2};
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
     margin: 1em auto;
     display: flex;
     justify-content: center;

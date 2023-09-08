@@ -24,7 +24,6 @@ export const FormContact = () => {
 
   const schema = yup.object({
     firstName: yup.string().required(),
-    lastName: yup.string().required(),
     email: yup.string().email().required(),
     countryCode: yup.string().required(),
     phoneNumber: yup.number().required(),
@@ -76,21 +75,22 @@ export const FormContact = () => {
   const mapContactData = (formData) => ({
     contact: {
       firstName: formData.firstName,
-      lastName: formData.lastName,
+      lastName: "",
       email: formData.email,
       phone: {
         number: formData.phoneNumber,
         countryCode: formData.countryCode,
       },
       message: formData.message,
-      hostname: window.location.hostname || "alquilerproyectores.com",
+       hostname: window.location.hostname || "alquilerproyectores.com",
+
     },
   });
 
   return (
     <Form onSubmit={handleSubmit(onSubmitFetchContacts)}>
       <Row gutter={[16, 27]}>
-        <Col xs={24} sm={24} md={12}>
+        <Col xs={24} sm={24} md={24}>
           <Controller
             name="firstName"
             control={control}
@@ -108,25 +108,7 @@ export const FormContact = () => {
             )}
           />
         </Col>
-        <Col xs={24} sm={24} md={12}>
-          <Controller
-            name="lastName"
-            control={control}
-            defaultValue=""
-            render={({ field: { onChange, value, name } }) => (
-              <Input
-                label="Ingrese apellidos"
-                name={name}
-                value={value}
-                onChange={onChange}
-                isMobile={isMobile}
-                error={error(name)}
-                required={required(name)}
-                bgColor={"white"}
-              />
-            )}
-          />
-        </Col>
+
         <Col span={24}>
           <Controller
             name="email"

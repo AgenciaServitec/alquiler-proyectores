@@ -39,3 +39,6 @@ export { default as ProjectorPredesign } from "./webp/projector-predesign.webp";
 export { default as ImgPlan1 } from "./webp/img-plan-1.webp";
 export { default as ImgPlan2 } from "./webp/img-plan-2.webp";
 export { default as ImgPlan3 } from "./webp/img-plan-3.webp";
+
+//-----CONGRATULATION
+export { default as ImgCongratulations } from "./webp/congratulation.webp";
