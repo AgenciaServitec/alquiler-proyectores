@@ -65,7 +65,7 @@ const labelAnimate = css`
   font-weight: 600;
   font-size: 0.7rem;
   background-color: ${({ theme }) => theme.colors.tertiary};
-  color: ${({ theme }) => theme.colors.font3};
+  color: ${({ theme }) => theme.colors.dark};
 `;
 
 const Container = styled.div`
@@ -96,7 +96,7 @@ const Container = styled.div`
           ? theme.colors.error
           : disabled
           ? theme.bg.border
-          : lighten(0.1, theme.colors.primary)
+          : lighten(0.1, theme.colors.secondary)
       };}
 
     .item-label,
@@ -119,8 +119,8 @@ const Container = styled.div`
             box-shadow: 0 0 0 2px ${tint(0.85, theme.colors.error)};
           `
         : css`
-            border-color: ${lighten(0.1, theme.colors.primary)};
-            box-shadow: 0 0 0 2px ${tint(0.85, theme.colors.primary)};
+            border-color: ${lighten(0.1, theme.colors.secondary)};
+            box-shadow: 0 0 0 2px ${tint(0.85, theme.colors.secondary)};
           `
     }
   }
@@ -134,7 +134,7 @@ const Container = styled.div`
       pointer-events: none;
       display: flex;
       align-items: center;
-      background-color: transparent;
+      background-color: white;
       color: ${error ? theme.colors.error : theme.colors.body};
       font-size: ${theme.font_sizes.small};
       transition: all ease-in-out 150ms, opacity 150ms;
@@ -173,7 +173,7 @@ const Container = styled.div`
             ? theme.colors.error
             : disabled
             ? theme.colors.body
-            : lighten(0.1, theme.colors.primary)
+            : lighten(0.1, theme.colors.secondary)
         };
       }
 
@@ -182,7 +182,7 @@ const Container = styled.div`
         ${labelAnimate};
 
         color: ${
-          error ? theme.colors.error : lighten(0.1, theme.colors.primary)
+          error ? theme.colors.error : lighten(0.1, theme.colors.secondary)
         };
 
         ${
@@ -193,7 +193,7 @@ const Container = styled.div`
         }
         &:after {
           color: ${
-            error ? theme.colors.error : lighten(0.1, theme.colors.primary)
+            error ? theme.colors.error : lighten(0.1, theme.colors.secondary)
           };
         }
       }
@@ -203,12 +203,12 @@ const Container = styled.div`
         ${
           value &&
           css`
-            -webkit-text-fill-color: ${({ theme }) => theme.colors.primary};
+            -webkit-text-fill-color: ${({ theme }) => theme.colors.secondary};
           `
         };
 
         &:focus {
-          -webkit-text-fill-color: ${({ theme }) => theme.colors.primary};
+          -webkit-text-fill-color: ${({ theme }) => theme.colors.secondary};
         }
       }
 

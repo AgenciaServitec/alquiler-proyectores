@@ -5,13 +5,16 @@ import { Drawer } from "./Drawer";
 import { useNavigate } from "react-router";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { ButtonsFloating } from "../ui";
+import { ButtonsFloating, ContactModal } from "../ui";
 
 export const BaseLayout = ({ children }) => {
   const { isMobile } = useDevice();
   const navigate = useNavigate();
 
+  const [isVisibleModal, setIsVisibleModal] = useState(false);
   const [visibleDrawer, setVisibleDrawer] = useState(false);
+
+  const onSetIsVisibleModal = () => setIsVisibleModal(!isVisibleModal);
 
   return (
     <Container>
@@ -23,10 +26,15 @@ export const BaseLayout = ({ children }) => {
         isMobile={isMobile}
         onSetVisibleDrawer={setVisibleDrawer}
         onNavigate={navigate}
+        onSetIsVisibleModal={onSetIsVisibleModal}
       />
       <main className="body">{children}</main>
       <Footer />
       <ButtonsFloating />
+      <ContactModal
+        isVisibleModal={isVisibleModal}
+        onSetIsVisibleModal={onSetIsVisibleModal}
+      />
     </Container>
   );
 };

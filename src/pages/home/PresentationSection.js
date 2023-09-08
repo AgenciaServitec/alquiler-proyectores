@@ -10,7 +10,7 @@ import { Button } from "../../components";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
 import { motion } from "framer-motion";
 
-export const PresentationSection = () => {
+export const PresentationSection = ({ onSetIsVisibleModal }) => {
   return (
     <Container>
       <div className="wrapper-contents" id="home-section">
@@ -36,7 +36,11 @@ export const PresentationSection = () => {
               </div>
             </div>
             <div className="btn-item">
-              <Button margin="0" width="73%">
+              <Button
+                margin="0"
+                width="73%"
+                onClick={() => onSetIsVisibleModal()}
+              >
                 CONTACTAR
               </Button>
             </div>

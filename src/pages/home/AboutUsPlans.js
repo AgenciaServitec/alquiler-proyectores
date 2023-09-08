@@ -33,7 +33,7 @@ const plans = [
   },
 ];
 
-export const AboutUsPlans = () => {
+export const AboutUsPlans = ({ onSetIsVisibleModal }) => {
   return (
     <Container id="plans-section">
       <h2>Nuestros planes</h2>
@@ -67,7 +67,9 @@ export const AboutUsPlans = () => {
         ))}
       </div>
       <div className="wrapper-contact-button">
-        <Button width="20em">Contactar</Button>
+        <Button width="20em" onClick={() => onSetIsVisibleModal()}>
+          Contactar
+        </Button>
       </div>
     </Container>
   );
@@ -104,16 +106,19 @@ const Container = styled.div`
       width: 100%;
       max-width: 22em;
       height: auto;
-      background: ${({ theme }) => theme.colors.dark};
+      background: #343434;
       border: 1px solid #aeaeae;
       border-radius: 1em;
       overflow: hidden;
       margin: auto;
 
       &:nth-child(2) {
+        background: #1e1e1e;
         border: 1px solid ${({ theme }) => theme.colors.white};
       }
+
       &:nth-child(3) {
+        background: #0e0e0e;
         border: 1px solid ${({ theme }) => theme.colors.primary};
       }
 
@@ -150,6 +155,7 @@ const Container = styled.div`
 
         .list {
           padding: 1em 1.5em;
+
           ul {
             text-align: left;
             display: grid;

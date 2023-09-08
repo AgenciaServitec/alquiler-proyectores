@@ -83,13 +83,13 @@ export const FormContact = () => {
         countryCode: formData.countryCode,
       },
       message: formData.message,
-      hostname: window.location.hostname || "servitec-allinon.site",
+      hostname: window.location.hostname || "alquilerproyectores.com",
     },
   });
 
   return (
     <Form onSubmit={handleSubmit(onSubmitFetchContacts)}>
-      <Row gutter={[16, 30]}>
+      <Row gutter={[16, 27]}>
         <Col xs={24} sm={24} md={12}>
           <Controller
             name="firstName"
@@ -101,6 +101,7 @@ export const FormContact = () => {
                 name={name}
                 value={value}
                 onChange={onChange}
+                isMobile={isMobile}
                 error={error(name)}
                 required={required(name)}
               />
@@ -118,6 +119,7 @@ export const FormContact = () => {
                 name={name}
                 value={value}
                 onChange={onChange}
+                isMobile={isMobile}
                 error={error(name)}
                 required={required(name)}
                 bgColor={"white"}
@@ -136,6 +138,7 @@ export const FormContact = () => {
                 name={name}
                 value={value}
                 onChange={onChange}
+                isMobile={isMobile}
                 error={error(name)}
                 required={required(name)}
               />
@@ -174,6 +177,7 @@ export const FormContact = () => {
                 name={name}
                 value={value}
                 onChange={onChange}
+                isMobile={isMobile}
                 error={error(name)}
                 required={required(name)}
               />
@@ -199,14 +203,17 @@ export const FormContact = () => {
         </Col>
         <Col xs={24} sm={24} md={24} lg={54}>
           <Button
+            type="secondary"
             width="100%"
             margin=""
             block
             htmlType="submit"
             loading={loadingContact}
             disabled={loadingContact}
-            text="Enviar"
-          />
+            noHover
+          >
+            Enviar
+          </Button>
         </Col>
       </Row>
     </Form>

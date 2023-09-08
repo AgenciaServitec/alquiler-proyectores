@@ -6,7 +6,6 @@ export const InputNumber = ({
   value,
   required = false,
   hidden = false,
-  isMobile = false,
   error,
   label,
   variant = "outlined",
@@ -31,7 +30,7 @@ export const InputNumber = ({
         placeholder=""
         type="number"
         autoComplete="chrome-off"
-        size={isMobile ? "middle" : "large"}
+        size="large"
         value={value}
         disabled={disabled}
         allowClear={!disabled}

@@ -29,6 +29,7 @@ export const Button = ({
   width = "auto",
   loading = false,
   disabled = false,
+  noHover = false,
   props,
 }) => {
   const btnStyle = buttonsType[type];
@@ -41,6 +42,7 @@ export const Button = ({
       color={btnStyle.color}
       border={btnStyle.border}
       disabled={disabled}
+      noHover={noHover}
       {...props}
     >
       <div className="content-button">
@@ -58,7 +60,7 @@ export const Button = ({
 };
 
 const Container = styled.button`
-  ${({ background, color, border, width }) => css`
+  ${({ background, color, border, width, noHover }) => css`
     width: ${width};
     padding: 0.7em 1.5em;
     border-radius: ${({ theme }) => theme.border_radius.small};
@@ -74,10 +76,13 @@ const Container = styled.button`
       font-size: 1.2em;
     }
 
-    &:hover {
-      transition: all ease-in-out 0.3s;
-      transform: scale(1.05, 1.05);
-    }
+    ${!noHover &&
+    css`
+      &:hover {
+        transition: all ease-in-out 0.3s;
+        transform: scale(1.05, 1.05);
+      }
+    `}
 
     ${({ disabled }) =>
       disabled &&

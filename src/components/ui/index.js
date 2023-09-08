@@ -11,5 +11,4 @@ export * from "./SelectOption";
 export * from "./TextArea";
 export * from "./Form";
 export * from "./FormContact";
-
-
+export * from "./ContactModal";

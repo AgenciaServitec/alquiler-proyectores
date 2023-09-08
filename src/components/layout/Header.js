@@ -6,7 +6,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Header = ({ isMobile, onSetVisibleDrawer, onNavigate }) => {
+export const Header = ({
+  isMobile,
+  onSetVisibleDrawer,
+  onNavigate,
+  onSetIsVisibleModal,
+}) => {
   return (
     <HeaderContainer>
       <WrapperComponent>
@@ -45,9 +50,9 @@ export const Header = ({ isMobile, onSetVisibleDrawer, onNavigate }) => {
                   <a href="#plans-section">
                     <li>PLANES</li>
                   </a>
-                  <a href="#plans-section">
+                  <span onClick={() => onSetIsVisibleModal()}>
                     <li className="btn-primary">CONTACTAR</li>
-                  </a>
+                  </span>
                 </ul>
               </nav>
             </MenuDesktop>
@@ -95,6 +100,7 @@ const MenuDesktop = styled.div`
         padding: 0.3em 0.5em;
         border-radius: ${({ theme }) => theme.border_radius.small};
         color: ${({ theme }) => theme.colors.black};
+        cursor: pointer;
       }
     }
   }

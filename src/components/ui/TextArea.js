@@ -18,7 +18,6 @@ export const TextArea = ({
   error,
   label,
   variant = "outlined",
-  isMobile = false,
   ...props
 }) => {
   const Container = ComponentContainer[variant];
@@ -37,7 +36,7 @@ export const TextArea = ({
         value={value}
         disabled={disabled}
         autoComplete="chrome-off"
-        size={isMobile ? "middle" : "large"}
+        size="large"
         {...props}
       />
     </Container>

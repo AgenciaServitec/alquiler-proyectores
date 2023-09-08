@@ -16,7 +16,6 @@ export const Input = ({
   value,
   required = false,
   hidden = false,
-  isMobile = false,
   error,
   label,
   variant = "outlined",
@@ -41,7 +40,7 @@ export const Input = ({
       <InputAntd
         bordered={false}
         autoComplete="chrome-off"
-        size={isMobile ? "middle" : "large"}
+        size="large"
         placeholder=""
         value={value}
         disabled={disabled}
