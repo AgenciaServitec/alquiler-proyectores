@@ -16,7 +16,7 @@ import { currentConfig } from "../../firebase";
 import { useNavigate } from "react-router";
 import { Button } from "./index";
 
-export const FormContact = () => {
+export const FormContact = ({ onSetIsVisibleModal }) => {
   const { isMobile } = useDevice();
   const navigate = useNavigate();
 
@@ -51,12 +51,13 @@ export const FormContact = () => {
       if (!response.ok) throw new Error(response.statusText);
 
       notification({ type: "success", title: "Enviado exitosamente" });
-
+      onSetIsVisibleModal(false);
       navigate("/contact-success");
     } catch (e) {
       console.log("Error email send:", e);
       notification({ type: "error", placement: "topLeft" });
     } finally {
+      // cleanContactForm(formData);
       setLoadingContact(false);
     }
   };
@@ -85,7 +86,10 @@ export const FormContact = () => {
       hostname: window.location.hostname || "alquiler-de-proyectores.com",
     },
   });
-
+  // todo: agregar limpieza de imput
+  // const cleanContactForm = (formData) => {
+  //   formData.firstName = "";
+  // };
   return (
     <Form onSubmit={handleSubmit(onSubmitFetchContacts)}>
       <Row gutter={[16, 27]}>

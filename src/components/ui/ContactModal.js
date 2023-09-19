@@ -12,7 +12,7 @@ export const ContactModal = ({ isVisibleModal, onSetIsVisibleModal }) => {
       footer={false}
     >
       <h2 className="title-item">Enviarme cotización</h2>
-      <FormContact />
+      <FormContact onSetIsVisibleModal={onSetIsVisibleModal} />
     </ModalContainer>
   );
 };
