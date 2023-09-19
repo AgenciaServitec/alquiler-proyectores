@@ -82,8 +82,7 @@ export const FormContact = () => {
         countryCode: formData.countryCode,
       },
       message: formData.message,
-       hostname: window.location.hostname || "alquilerproyectores.com",
-
+      hostname: window.location.hostname || "alquiler-de-proyectores.com",
     },
   });
 
