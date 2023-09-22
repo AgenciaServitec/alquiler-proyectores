@@ -1,11 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { ImgPlan1, ImgPlan2, ImgPlan3 } from "../../images";
+import {
+  ImgPlan1,
+  ImgPlan2,
+  ImgPlan3,
+  ImgPlan4,
+  ImgPlan5,
+  ImgPlan6,
+} from "../../images";
 import { Button } from "../../components";
 import { motion } from "framer-motion";
 
 const features = [
-  "Pago Aparte S/.150 por garantía del producto entregados.",
+  "Pago Aparte S/.350 por garantía del producto entregados.",
   "Se hace entrega del producto en nuestro mismo local, si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
 ];
 
@@ -15,20 +22,47 @@ const plans = [
     img: ImgPlan1,
     subTitle: "Alquiler por Horas",
     title: "1 Hora S/ 45",
+    subTitle2: "3000 lúmenes",
     features,
   },
   {
     id: 2,
     img: ImgPlan2,
     subTitle: "Promociones por Horas",
-    title: "3 Horas S/ 65",
+    title: "6 Horas S/ 95",
+    subTitle2: "3000 lúmenes",
     features,
   },
   {
     id: 3,
     img: ImgPlan3,
-    subTitle: "Alquiler por Días",
+    subTitle: "Alquiler por Horas",
     title: "1 Día S/ 180",
+    subTitle2: "3000 lúmenes",
+    features,
+  },
+  {
+    id: 4,
+    img: ImgPlan5,
+    subTitle: "Alquiler por Horas",
+    title: "1 Hora S/ 100",
+    subTitle2: "4200 a 5000 lúmenes",
+    features,
+  },
+  {
+    id: 5,
+    img: ImgPlan6,
+    subTitle: "Alquiler por Horas",
+    title: "6 Horas S/ 400",
+    subTitle2: "4200 a 5000 lúmenes",
+    features,
+  },
+  {
+    id: 6,
+    img: ImgPlan4,
+    subTitle: "Alquiler por Días",
+    title: "1 Día S/ 750",
+    subTitle2: "4200-5000 lúmenes",
     features,
   },
 ];
@@ -54,6 +88,7 @@ export const AboutUsPlans = ({ onSetIsVisibleModal }) => {
               <div className="title">
                 <h4>{plan.subTitle}</h4>
                 <h3>{plan.title}</h3>
+                <h4>{plan.subTitle2}</h4>
               </div>
               <div className="list">
                 <ul>
@@ -81,7 +116,6 @@ const Container = styled.div`
   text-align: center;
   padding: 4em 0;
   background-color: ${({ theme }) => theme.colors.secondary};
-
   h2 {
     color: ${({ theme }) => theme.colors.primary};
     font-size: 3em;
@@ -116,8 +150,17 @@ const Container = styled.div`
         background: #1e1e1e;
         border: 1px solid ${({ theme }) => theme.colors.white};
       }
+      &:nth-child(5) {
+        background: #1e1e1e;
+        border: 1px solid ${({ theme }) => theme.colors.white};
+      }
 
       &:nth-child(3) {
+        background: #0e0e0e;
+        border: 1px solid ${({ theme }) => theme.colors.primary};
+      }
+
+      &:nth-child(6) {
         background: #0e0e0e;
         border: 1px solid ${({ theme }) => theme.colors.primary};
       }
