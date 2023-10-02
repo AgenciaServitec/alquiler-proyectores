@@ -24,12 +24,12 @@ export const Drawer = ({
         <a href="#about-us">Nosotros</a>
       </MenuItem>
       <MenuItem onClick={() => onSetVisibleDrawer(false)}>
-        <a href="#services">Servicios</a>
+        <a href="#plans-section">Servicios</a>
       </MenuItem>
       <MenuItem
         onClick={() => {
           onSetVisibleDrawer(false);
-          onClickVisibleFormContact();
+          onClickVisibleFormContact(true);
         }}
       >
         <span>Contácto</span>
@@ -42,7 +42,7 @@ const ComponentDrawerAntd = styled(DrawerAntd)`
   color: #000;
 
   .ant-drawer-content-wrapper {
-    width: 100% !important;
+    width: 80% !important;
     ${mediaQuery.minTablet} {
       width: 40% !important;
     }
@@ -54,7 +54,7 @@ const ComponentDrawerAntd = styled(DrawerAntd)`
   }
   .ant-drawer-header,
   .ant-drawer-content {
-    background: #fff;
+    background: ${({ theme }) => theme.colors.secondary};
   }
 `;
 
@@ -63,7 +63,7 @@ const MenuItem = styled.div`
   a,
   span {
     cursor: pointer;
-    color: #000;
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 1.7rem;
   }
 `;

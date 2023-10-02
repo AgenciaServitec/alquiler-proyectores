@@ -21,6 +21,7 @@ export const BaseLayout = ({ children }) => {
       <Drawer
         visibleDrawer={visibleDrawer}
         onSetVisibleDrawer={setVisibleDrawer}
+        onClickVisibleFormContact={setIsVisibleModal}
       />
       <Header
         isMobile={isMobile}

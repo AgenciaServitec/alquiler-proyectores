@@ -20,7 +20,7 @@ export const ServicesCarousel = ({ isMobile }) => {
   ];
 
   return (
-    <Container>
+    <Container id="about-us">
       <ul className="list-cards">
         <Carousel
           autoPlay
