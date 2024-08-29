@@ -46,8 +46,8 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
               <div className="text-item">
-                <span>Chorrillos, Perú</span>
-                <p>Calle Nestor Bermúdez 113</p>
+                <span>Vargas 179 Piso 1 - Chorrillos</span>
+                <p>Lima - Perú</p>
               </div>
             </div>
           </div>
