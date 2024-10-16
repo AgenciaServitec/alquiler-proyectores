@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import styled, { css } from "styled-components";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
+import {common} from "../../firebase";
 
 export const ButtonsFloating = () => (
   <Container>
@@ -14,7 +15,7 @@ export const ButtonsFloating = () => (
       <WrapperButton bg="#5cc753">
         <div className="item-text">
           <div>Whatsapp</div>
-          <div>941801827</div>
+          <div>{common?.contactData?.numbers?.phone?.[0]}</div>
         </div>
         <div className="item-icon">
           <FontAwesomeIcon icon={faWhatsapp} className="icon" />

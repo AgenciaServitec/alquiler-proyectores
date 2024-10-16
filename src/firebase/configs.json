@@ -6,19 +6,19 @@
         "sales": "contactos@servitec-peru.com"
       },
       "numbers": {
-        "phone": ["941 801 827"],
-        "wsp": ["941 801 827"]
+        "phone": ["906 829 867"],
+        "wsp": ["906 829 867"]
       },
       "officeHour": "Lun-Dom / 9am-6pm",
       "socialLinks": {
         "facebook": "https://www.facebook.com/Servitec.chorrillos/",
         "instagram": "-",
-        "whatsapp": "https://api.whatsapp.com/send/?phone=+51941801827&text=Estoy+interesado+en+alquilar+un+proyector&app_absent=0",
+        "whatsapp": "https://api.whatsapp.com/send/?phone=+51906829867&text=Estoy+interesado+en+alquilar+un+proyector&app_absent=0",
         "messenger": "-",
         "youtube": "https://www.youtube.com/watch?v=FNMfFy4iKvg"
       },
       "directions": {
-        "local1": "Chorrillos, Perú - Pastor Davila 117",
+        "local1": "Vargas 179 Piso 1 - Chorrillos, Perú",
         "local2": "-"
       },
       "poweredBy": {
@@ -38,7 +38,7 @@
       "appId": "1:1098379309371:web:fa2e8d9ab9ecf49b30071e",
       "measurementId": "G-GJHNGG7Q82"
     },
-    "sendingEmailsApiUrl": "-",
+    "sendingEmailsApiUrl": "https://api-servitecsales.web.app",
     "buckets": {}
   },
   "production": {
@@ -52,7 +52,7 @@
       "appId": "1:1098379309371:web:fa2e8d9ab9ecf49b30071e",
       "measurementId": "G-GJHNGG7Q82"
     },
-    "sendingEmailsApiUrl": "https://us-central1-sendingemails-348505.cloudfunctions.net/api",
+    "sendingEmailsApiUrl": "https://api-servitecsales.web.app",
     "buckets": {}
   }
 }

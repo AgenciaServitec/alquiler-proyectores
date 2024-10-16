@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { capitalize } from "lodash";
-import { contactData } from "../../firebase";
+import {common, contactData} from "../../firebase";
 import { lighten } from "polished";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
 
@@ -25,7 +25,7 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faPhone} />
               </div>
               <div className="text-item">
-                <span>941 801 827</span>
+                <span>{common?.contactData?.numbers?.phone?.[0]}</span>
                 <p>
                   Horarios : <br />
                   Lunes a Viernes de 10:00 am a 7:00 pm
