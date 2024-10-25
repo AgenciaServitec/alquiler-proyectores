@@ -7,7 +7,8 @@
       },
       "numbers": {
         "phone": ["906 829 867"],
-        "wsp": ["906 829 867"]
+        "wsp": ["906 829 867"],
+        "apiWsp": ["906829867"]
       },
       "officeHour": "Lun-Dom / 9am-6pm",
       "socialLinks": {
