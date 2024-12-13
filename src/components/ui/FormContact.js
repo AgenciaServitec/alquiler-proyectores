@@ -63,7 +63,7 @@ export const FormContact = ({ onSetIsVisibleModal }) => {
   };
 
   const fetchSendEmail = async (contact) =>
-    await fetch(`${currentConfig.sendingEmailsApiUrl}/generic/contact`, {
+    await fetch(`${currentConfig.sendingEmailsApiUrl}/emails/contact`, {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": null,
