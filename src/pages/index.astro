@@ -1,12 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import heroImage1 from "../assets/1.jpg";
-import heroImage2 from "../assets/2.jpg";
-import heroImage3 from "../assets/3.jpg";
-import heroImage4 from "../assets/4.jpg";
-import info1Image from "../assets/info1image.png";
-import info2Image from "../assets/info2image.jpg";
-import trustImage from "../assets/trustimage.png";
 import Background from "../components/Background.astro";
 import BrandSection from "../components/BrandSection.astro";
 import CarouselSection from "../components/CarouselSection.astro";
@@ -14,221 +7,206 @@ import MainSection from "../components/MainSection.astro";
 ---
 
 <Layout title="Alquiler de proyectores">
-  <Background/>
-      <MainSection/>
-      <BrandSection/>
-      <CarouselSection/>
-      <div
-        class="flex gap-4 w-full mt-20 px-4 md:px-0 xl:px-36 grid grid-cols-1 md:grid-cols-4"
-      >
-        <div
-          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
-        >
-          <img
-            src={heroImage1.src}
-            class="w-full h-full absolute top-0 left-0"
-          />
-          <div
-            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
-          >
-            <span class="text-white font-semibold">Lorem ipsum</span>
-            <span class="text-white text-[0.8rem]"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-        <div
-          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
-        >
-          <img
-            src={heroImage2.src}
-            class="w-full h-full absolute top-0 left-0"
-          />
-          <div
-            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
-          >
-            <span class="text-white font-semibold">Lorem ipsum</span>
-            <span class="text-white text-[0.8rem]"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-        <div
-          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
-        >
-          <img
-            src={heroImage3.src}
-            class="w-full h-full absolute top-0 left-0"
-          />
-          <div
-            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
-          >
-            <span class="text-white font-semibold">Lorem ipsum</span>
-            <span class="text-white text-[0.8rem]"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-        <div
-          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
-        >
-          <img
-            src={heroImage4.src}
-            class="w-full h-full absolute top-0 left-0"
-          />
-          <div
-            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
-          >
-            <span class="text-white font-semibold">Lorem ipsum</span>
-            <span class="text-white text-[0.8rem]"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  <Background />
+  <MainSection />
+  <BrandSection />
+  <CarouselSection />
+  <!--<div-->
+  <!--  class="flex gap-4 w-full mt-20 px-4 md:px-0 xl:px-36 grid grid-cols-1 md:grid-cols-4"-->
+  <!--&gt;-->
+  <!--  <div-->
+  <!--    class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"-->
+  <!--  >-->
+  <!--    <img src={heroImage1.src} class="w-full h-full absolute top-0 left-0" />-->
+  <!--    <div-->
+  <!--      class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"-->
+  <!--    >-->
+  <!--      <span class="text-white font-semibold">Lorem ipsum</span>-->
+  <!--      <span class="text-white text-[0.8rem]"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ullam,-->
+  <!--        placeat tempore</span-->
+  <!--      >-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--  <div-->
+  <!--    class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"-->
+  <!--  >-->
+  <!--    <img src={heroImage2.src} class="w-full h-full absolute top-0 left-0" />-->
+  <!--    <div-->
+  <!--      class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"-->
+  <!--    >-->
+  <!--      <span class="text-white font-semibold">Lorem ipsum</span>-->
+  <!--      <span class="text-white text-[0.8rem]"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ullam,-->
+  <!--        placeat tempore</span-->
+  <!--      >-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--  <div-->
+  <!--    class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"-->
+  <!--  >-->
+  <!--    <img src={heroImage3.src} class="w-full h-full absolute top-0 left-0" />-->
+  <!--    <div-->
+  <!--      class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"-->
+  <!--    >-->
+  <!--      <span class="text-white font-semibold">Lorem ipsum</span>-->
+  <!--      <span class="text-white text-[0.8rem]"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ullam,-->
+  <!--        placeat tempore</span-->
+  <!--      >-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--  <div-->
+  <!--    class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"-->
+  <!--  >-->
+  <!--    <img src={heroImage4.src} class="w-full h-full absolute top-0 left-0" />-->
+  <!--    <div-->
+  <!--      class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"-->
+  <!--    >-->
+  <!--      <span class="text-white font-semibold">Lorem ipsum</span>-->
+  <!--      <span class="text-white text-[0.8rem]"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ullam,-->
+  <!--        placeat tempore</span-->
+  <!--      >-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</div>-->
+  <!--<section-->
+  <!--    class="mt-10 md:mt-24 w-auto justify-center items-center flex flex-col"-->
+  <!--&gt;-->
+  <!--  <h3-->
+  <!--      class="text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10 px-4 md:px-0"-->
+  <!--  >-->
+  <!--      <span-->
+  <!--          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"-->
+  <!--      >How</span-->
+  <!--      > it works?-->
+  <!--  </h3>-->
+  <!--  <div-->
+  <!--      class="flex flex-col md:flex-row w-full md:px-60 justify-center items-center"-->
+  <!--  >-->
+  <!--    <div-->
+  <!--        class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"-->
+  <!--    >-->
+  <!--      <div-->
+  <!--          class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"-->
+  <!--      >-->
+  <!--          <span-->
+  <!--              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"-->
+  <!--          >Step 1</span-->
+  <!--          >-->
+  <!--        <span class="text-white text-2xl mt-3">1. Upload your image</span>-->
+  <!--        <span class="text-slate-300 text-[0.8rem] mt-3"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod-->
+  <!--            ullam, placeat tempore</span-->
+  <!--        >-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div-->
+  <!--        class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"-->
+  <!--    >-->
+  <!--      <div-->
+  <!--          class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"-->
+  <!--      >-->
+  <!--          <span-->
+  <!--              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"-->
+  <!--          >Step 2</span-->
+  <!--          >-->
+  <!--        <span class="text-white text-2xl mt-3">2. Select item</span>-->
+  <!--        <span class="text-slate-300 text-[0.8rem] mt-3"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod-->
+  <!--            ullam, placeat tempore</span-->
+  <!--        >-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div-->
+  <!--        class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"-->
+  <!--    >-->
+  <!--      <div-->
+  <!--          class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"-->
+  <!--      >-->
+  <!--          <span-->
+  <!--              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"-->
+  <!--          >Step 3</span-->
+  <!--          >-->
+  <!--        <span class="text-white text-2xl mt-3">3. Download your image</span>-->
+  <!--        <span class="text-slate-300 text-[0.8rem] mt-3"-->
+  <!--        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod-->
+  <!--            ullam, placeat tempore</span-->
+  <!--        >-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</section>-->
 
-    <section
-      class="mt-10 md:mt-24 w-auto justify-center items-center flex flex-col"
-    >
-      <h3
-        class="text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10 px-4 md:px-0"
-      >
-        <span
-          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
-          >How</span
-        > it works?
-      </h3>
-      <div
-        class="flex flex-col md:flex-row w-full md:px-60 justify-center items-center"
-      >
-        <div
-          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
-        >
-          <div
-            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
-          >
-            <span
-              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
-              >Step 1</span
-            >
-            <span class="text-white text-2xl mt-3">1. Upload your image</span>
-            <span class="text-slate-300 text-[0.8rem] mt-3"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-        <div
-          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
-        >
-          <div
-            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
-          >
-            <span
-              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
-              >Step 2</span
-            >
-            <span class="text-white text-2xl mt-3">2. Select item</span>
-            <span class="text-slate-300 text-[0.8rem] mt-3"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-        <div
-          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
-        >
-          <div
-            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
-          >
-            <span
-              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
-              >Step 3</span
-            >
-            <span class="text-white text-2xl mt-3">3. Download your image</span>
-            <span class="text-slate-300 text-[0.8rem] mt-3"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              ullam, placeat tempore</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  <!--<section-->
+  <!--    class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"-->
+  <!--&gt;-->
+  <!--  <img-->
+  <!--      src={info1Image.src}-->
+  <!--      class="h-auto md:w-96 w-full rounded-xl mb-4 md:mb-0"-->
+  <!--  />-->
+  <!--  <div-->
+  <!--      class="w-full md:w-[28rem] mx-auto md:mx-0 md:ml-20 text-center md:text-left"-->
+  <!--  >-->
+  <!--      <span class="text-white text-2xl md:text-3xl font-semibold">-->
+  <!--        Make your products pop with <span-->
+  <!--          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"-->
+  <!--      >AI-powered features</span-->
+  <!--      >-->
+  <!--      </span>-->
+  <!--    <p class="text-slate-300 text-[0.7rem] mt-4">-->
+  <!--      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita-->
+  <!--      modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore-->
+  <!--      corporis repellat molestias harum nostrum cum, natus consequatur. Modi-->
+  <!--      molestiae maiores corporis.-->
+  <!--    </p>-->
+  <!--    <button-->
+  <!--        class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"-->
+  <!--    >-->
+  <!--      Explore AI Tools-->
+  <!--    </button>-->
+  <!--  </div>-->
+  <!--</section>-->
 
-    <section
-      class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"
-    >
-      <img
-        src={info1Image.src}
-        class="h-auto md:w-96 w-full rounded-xl mb-4 md:mb-0"
-      />
-      <div
-        class="w-full md:w-[28rem] mx-auto md:mx-0 md:ml-20 text-center md:text-left"
-      >
-        <span class="text-white text-2xl md:text-3xl font-semibold">
-          Make your products pop with <span
-            class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
-            >AI-powered features</span
-          >
-        </span>
-        <p class="text-slate-300 text-[0.7rem] mt-4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore
-          corporis repellat molestias harum nostrum cum, natus consequatur. Modi
-          molestiae maiores corporis.
-        </p>
-        <button
-          class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"
-        >
-          Explore AI Tools
-        </button>
-      </div>
-    </section>
+  <!--<section-->
+  <!--    class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"-->
+  <!--&gt;-->
+  <!--  <div-->
+  <!--      class="w-full md:w-[28rem] mx-auto md:mx-0 md:mr-20 text-center md:text-left mb-4 md:mb-0"-->
+  <!--  >-->
+  <!--      <span class="text-white text-3xl font-semibold text-center">-->
+  <!--        Instant <span-->
+  <!--          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"-->
+  <!--      >Object Removal</span-->
+  <!--      > for Stunning Images with AI-->
+  <!--      </span>-->
+  <!--    <p class="text-slate-300 text-[0.7rem] mt-4">-->
+  <!--      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita-->
+  <!--      modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore-->
+  <!--      corporis repellat molestias harum nostrum cum, natus consequatur. Modi-->
+  <!--      molestiae maiores corporis.-->
+  <!--    </p>-->
+  <!--    <button-->
+  <!--        class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"-->
+  <!--    >-->
+  <!--      Explore AI Tools-->
+  <!--    </button>-->
+  <!--  </div>-->
+  <!--  <img src={info2Image.src} class="h-auto md:w-96 w-full rounded-xl" />-->
+  <!--</section>-->
 
-    <section
-      class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"
-    >
-      <div
-        class="w-full md:w-[28rem] mx-auto md:mx-0 md:mr-20 text-center md:text-left mb-4 md:mb-0"
-      >
-        <span class="text-white text-3xl font-semibold text-center">
-          Instant <span
-            class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
-            >Object Removal</span
-          > for Stunning Images with AI
-        </span>
-        <p class="text-slate-300 text-[0.7rem] mt-4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore
-          corporis repellat molestias harum nostrum cum, natus consequatur. Modi
-          molestiae maiores corporis.
-        </p>
-        <button
-          class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"
-        >
-          Explore AI Tools
-        </button>
-      </div>
-      <img src={info2Image.src} class="h-auto md:w-96 w-full rounded-xl" />
-    </section>
-
-    <section
-      class="w-auto justify-center items-center flex flex-col mt-20 px-4 md:px-0"
-    >
-      <h3
-        class="text-3xl md:text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10"
-      >
-        <span
-          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
-          >Trusted by <span class="text-white">2M+</span> users</span
-        >
-      </h3>
-      <img src={trustImage.src} class="w-full md:w-auto" />
-    </section>
-  </div>
+  <!--<section-->
+  <!--    class="w-auto justify-center items-center flex flex-col mt-20 px-4 md:px-0"-->
+  <!--&gt;-->
+  <!--  <h3-->
+  <!--      class="text-3xl md:text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10"-->
+  <!--  >-->
+  <!--      <span-->
+  <!--          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"-->
+  <!--      >Trusted by <span class="text-white">2M+</span> users</span-->
+  <!--      >-->
+  <!--  </h3>-->
+  <!--  <img src={trustImage.src} class="w-full md:w-auto" />-->
+  <!--</section>-->
 </Layout>

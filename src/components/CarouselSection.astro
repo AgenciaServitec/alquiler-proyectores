@@ -1,34 +1,64 @@
 ---
+import ContentWrapper from "./ContentWrapper.astro";
 const items = [
-    { name: "carousel-item1", image:"/images/carousel-images/banner-alquiler1.webp"},
-    { name: "carousel-item2", image:"/images/carousel-images/banner-alquiler2.webp"},
-    { name: "carousel-item3", image:"/images/carousel-images/banner-alquiler3.webp"},
-    { name: "carousel-item4", image:"/images/carousel-images/banner-alquiler4.webp"},
-    { name: "carousel-item5", image:"/images/carousel-images/banner-alquiler5.webp"}
+  {
+    name: "carousel-item1",
+    image: "/images/carousel-images/banner-alquiler1.webp",
+  },
+  {
+    name: "carousel-item2",
+    image: "/images/carousel-images/banner-alquiler2.webp",
+  },
+  {
+    name: "carousel-item3",
+    image: "/images/carousel-images/banner-alquiler3.webp",
+  },
+  {
+    name: "carousel-item4",
+    image: "/images/carousel-images/banner-alquiler4.webp",
+  },
+  {
+    name: "carousel-item5",
+    image: "/images/carousel-images/banner-alquiler5.webp",
+  },
 ];
 ---
-<div class="relative flex overflow-x-hidden w-full" >
-    <div class="flex  py-12 animate-marquee whitespace-nowrap">
-        {items.map((item) => (
-                <div class="mx-4 w-60 md:w-80 transition-transform duration-200 ease-in-out hover:scale-110">
-                    <img
-                            src={item.image}
-                            alt={item.name}
-                            class="h-auto w-full rounded-lg shadow-md "
-                    />
-                </div>
-        ))}
-    </div>
 
-    <div class=" flex absolute  top-0 py-12 animate-marquee2 whitespace-nowrap  ">
-        {items.map((item) => (
-                <div class="mx-4 w-60 md:w-80 transition-transform duration-200 ease-in-out hover:scale-110">
-                    <img
-                            src={item.image}
-                            alt={item.name}
-                            class="h-auto w-full rounded-lg shadow-md "
-                    />
-                </div>
-        ))}
+<section>
+  <ContentWrapper>
+    <div class="relative flex overflow-x-hidden w-full">
+      <div class="flex gap-6 md:gap-8 py-12 animate-marquee whitespace-nowrap">
+        {
+          items.map((item) => (
+            <div class="w-60 md:w-80 transition-transform duration-200 ease-in-out hover:scale-110">
+              <img
+                src={item.image}
+                alt={item.name}
+                class="h-full w-full rounded-lg shadow-md "
+              />
+            </div>
+          ))
+        }
+      </div>
+      <div
+        class="flex gap-6 md:gap-8 absolute top-0 left-6 md:left-8 py-12 animate-marquee2 whitespace-nowrap"
+      >
+        {
+          items.map((item) => (
+            <div class="w-60 md:w-80 transition-transform duration-200 ease-in-out hover:scale-110">
+              <img
+                src={item.image}
+                alt={item.name}
+                class="h-full w-full rounded-lg shadow-md "
+              />
+            </div>
+          ))
+        }
+      </div>
     </div>
-</div>
+  </ContentWrapper>
+</section>
+
+<script>
+  window.document.querySelector("");
+</script>

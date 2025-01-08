@@ -1,23 +1,39 @@
 ---
-import {Icon} from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 ---
-<header class="w-full p-6 bg-transparent backdrop-blur-sm fixed">
-    <div class="w-full max-w-[1243px] m-auto">
-        <div class="flex justify-between items-center">
-            <span class="text-white text-lg md:text-2xl">Reparacion</span>
-            <button
-                    id="hamburger"
-                    class="md:hidden text-white absolute right-0 text-xl"
+
+<header id="header" class="w-full fixed z-50">
+  <div class="w-full p-4 max-w-[1243px] m-auto">
+    <div class="flex justify-between items-center">
+      <img
+        class="w-48"
+        src="/images/logo-servitec.webp"
+        alt="Logo de Servitec Peru"
+      />
+      <button id="hamburger" class="md:hidden bg-white p-1 text-xl rounded-xl">
+        <Icon name="mdi:menu" class="text-black text-4xl" />
+      </button>
+      <nav class="hidden md:flex">
+        <ul class="flex gap-4 text-slate-300 mt-2 ml-20" id="menu">
+          <li><a href="#plans" class="hover:text-white">Planes</a></li>
+          <li>
+            <a
+              href="#contact"
+              class="text-black bg-[#FFF100] rounded-xl px-6 py-2">Contacto</a
             >
-            </button>
-            <!--<Icon name="mdi:home" />-->
-            <nav>
-                <ul class="hidden md:flex gap-4 text-slate-300 mt-2 ml-20" id="menu">
-                    <li><a href="/about" class="hover:text-white">Inicio</a></li>
-                    <li><a href="/blog" class="hover:text-white">Planes</a></li>
-                    <li><a href="/contact" class="hover:text-white">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </div>
 </header>
+
+<script>
+  window.onscroll = () => {
+    if (window.scrollY > 35) {
+      document.querySelector("#header").classList.add("backdrop-blur-sm");
+    } else {
+      document.querySelector("#header").classList.remove("backdrop-blur-sm");
+    }
+  };
+</script>
