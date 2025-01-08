@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23ad1fb0-4b58-4fbd-a78d-6e3f418e8b48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/info1image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/info2image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/trustimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScrollTop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/BaseLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Drawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ButtonsFloating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ContactModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/FormContact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/InputNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/SelectOption.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/TextArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/WrapperComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/component-container/Filled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/component-container/Group.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/component-container/Outlined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/component-container/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/modalConfirm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/yup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-list/banners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-list/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-list/marcas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-list/phoneCodes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/configs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useAnalyticsEventTracker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useAsync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useDevice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFormUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useLoadings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useQueryString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/Mini-proyectores-en-oferta.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/alquilerproyector.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/backgrpund-proyectores.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/backgrpundnew-huella.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/bannerAlquiler.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/bannerAlquiler2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/bannerAlquiler3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/bannerAlquiler4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/bannerAlquiler5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/dell.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/epson-laser-l20000-780x405.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/facturacion-electronica-peru-sunat.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/group-41.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/hp.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/huella.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/image-default.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/imagendeprueba.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/img-carousel-girl.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/lenovo-removebg-preview.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/lenovo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/lg-removebg-preview.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/lg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/logmac-removebg-preview.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/logo-factura.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/logo-servitec.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/mac.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/mitsubishi.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/newedithuella.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/offers1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/practicafondo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/proyector1-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/rectangle-25.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/rectangle-26.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/rectangle-27.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/rectangle-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/servitec-slider1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/servitec-slider2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/servitec-slider3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/servitec-slider4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/sistemadehuella.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/sony.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/toshiba.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/ultimacaja.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/universe.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/vector-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/others/vector.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/svg/Email.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/svg/Location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/svg/Phone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/banneralquiler.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/banneralquiler2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/banneralquiler3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/banneralquiler4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/banneralquiler5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/congratulation.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/diamont.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/ellipse-to-animated.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/ellipse.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/ellipsetoanimated2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/img-plan-6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/webp/projector-predesign.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact-success/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/AboutUs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/AboutUsPlans.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/BrandsSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/PresentationSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/ServicesCarousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/ServicesSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/VersionProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/PrivateRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/breakPoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/keyframes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/mediaQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constants/sizes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/Audiowide-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/themes/GlobalStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/themes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/themes/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/promised.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/removeAcents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AngelDev2001&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AgenciaServitec/alquiler-proyectores.git&quot;,
+    &quot;accountId&quot;: &quot;eed1d776-978f-4f57-88e8-2aa6e801d3a7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2qBHusfKK1eQAWQsaj2KjWoVgiK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "migrate__project__to__astro",
+    "last_opened_file_path": "C:/Users/Angel/WebstormProjects/alquiler-proyectores",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Angel\WebstormProjects\alquiler-proyectores" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23ad1fb0-4b58-4fbd-a78d-6e3f418e8b48" name="Changes" comment="" />
+      <created>1734129273510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734129273510</updated>
+      <workItem from="1734129274698" duration="2385000" />
+      <workItem from="1735321752886" duration="198000" />
+      <workItem from="1735321964091" duration="9000" />
+      <workItem from="1736351693802" duration="1005000" />
+    </task>
+    <task id="LOCAL-00001">
+      <option name="closed" value="true" />
+      <created>1734130550316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734130550316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update: updated end point in form contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: updated end point in form contact" />
+  </component>
+</project>
