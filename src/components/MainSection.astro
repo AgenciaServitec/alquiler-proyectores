@@ -4,7 +4,8 @@ const items = [
   {
     image: "/images/main-image.webp",
     title: "Alquiler de proyectores",
-    description: "Te brindamos el mejor servicio de alquiler para tus eventos",
+    description:
+      "Te brindamos el mejor servicio de alquiler para tus reuniones o eventos",
   },
 ];
 ---
@@ -13,20 +14,26 @@ const items = [
   <ContentWrapper>
     {
       items.map((item) => (
-        <div class="w-auto justify-center items-center flex flex-col">
-          <img src={item.image} alt="Imagen de proyeccion" class="w-96" />
-          <h1 class="text-4xl text-white w-full md:w-[40rem] md:text-6xl text-center justify-center font-bold mt-5 px-4 md:px-0">
-            {item.title}
-          </h1>
-          <h2 class="text-slate-300 mt-6 text-center text-md md:text-2xl md:px-0">
-            {item.description}
-          </h2>
-          <a
-            href="#contact"
-            class="bg-primary hover:bg-amber-500 text-xl font-semibold text-dark px-4 py-2 rounded-xl mt-5 flex items-center gap-2"
-          >
-            CONTACTAR
-          </a>
+        <div class="w-full justify-center items-center flex flex-col lg:flex-row">
+          <img
+            src={item.image}
+            alt="Imagen de proyeccion"
+            class="w-96 md:flex-1 lg:order-2"
+          />
+          <div class="md:flex-1 lg:order-1 text-center lg:text-left">
+            <h1 class="text-4xl text-white w-full md:w-[40rem] md:text-7xl font-bold mt-5 px-4 md:px-0">
+              {item.title}
+            </h1>
+            <h2 class="text-slate-300 mt-6 text-md md:text-2xl md:px-0">
+              {item.description}
+            </h2>
+            <a
+              href="#contact"
+              class="bg-primary hover:bg-amber-500 text-xl font-semibold text-dark px-4 py-2 rounded-xl mt-5 flex items-center gap-2"
+            >
+              CONTACTAR
+            </a>
+          </div>
         </div>
       ))
     }
