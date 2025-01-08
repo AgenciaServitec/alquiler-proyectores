@@ -1,0 +1,19 @@
+---
+const brands = [
+    { name: "canon", logo: "/images/brand-images/canon.png" },
+    { name: "epson", logo: "/images/brand-images/epson.png" },
+    { name: "mitsubishi", logo: "/images/brand-images/mitsubishi.png" },
+    { name: "sony", logo: "/images/brand-images/sony.png" },
+    { name: "toshiba", logo: "/images/brand-images/toshiba.png" },
+
+];
+---
+
+<section class="py-16 px-2 text-center">
+    <div class="flex flex-wrap gap-4 justify-center  items-center">
+        {brands.map((brand) => (
+                <img src={brand.logo} alt={`Logo de ${brand.name}`} class="max-w-[100px] h-auto object-contain transition-transform duration-200 ease-in-out hover:scale-110" />
+        ))}
+    </div>
+</section>
+
