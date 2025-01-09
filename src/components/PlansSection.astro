@@ -1,0 +1,102 @@
+---
+import ContentWrapper from "./ContentWrapper.astro";
+const descriptions = [
+  "Pago Aparte S/.350 por garantía del producto entregados.",
+  "Se hace entrega del producto en nuestro mismo local, si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
+];
+
+const plans = [
+  {
+    image: "/images/plan-images/plan1.webp",
+    text1: "Alquiler por Horas",
+    plan: "1 Hora S/ 45",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan2.webp",
+    text1: "Promociones por Horas",
+    plan: "6 Horas S/ 95",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan3.webp",
+    text1: "Alquiler por Días",
+    plan: "1 Día S/ 180",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan4.webp",
+    text1: "Alquiler por Horas",
+    plan: "1 Hora S/ 100",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan5.webp",
+    text1: "Promociones por Horas",
+    plan: "6 Horas S/ 400",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan6.webp",
+    text1: "Alquiler por Días",
+    plan: "1 Día S/ 750",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+];
+---
+
+<section class="bg-black">
+  <ContentWrapper>
+    <h1 class="text-center text-yellow-400 text-4xl font-bold my-10">
+      NUESTROS PLANES
+    </h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+    >
+      {
+        plans.map((plan) => (
+          <div class=" mt-10 rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-60 md:w-80 h-auto mb-4 md:mb-0 transition-transform duration-200 ease-in-out hover:scale-105">
+            <div class="bg-neutral-950 text-slate-300 rounded-lg w-[236px] md:w-[316px] h-full flex flex-col">
+              <img
+                src={plan.image}
+                alt="plan-image"
+                class="rounded-2xl h-full rounded-b-none"
+              />
+              <div class="px-6 py-6 text-center">
+                <h2>{plan.text1}</h2>
+                <h1 class="text-yellow-400 md:text-2xl text-xl font-bold">
+                  {plan.plan}
+                </h1>
+                <h2>{plan.text2}</h2>
+              </div>
+              <div class="px-10 pb-6">
+                <ul class="text-balance list-disc text">
+                  <li>{plan.description1}</li>
+                  <li class="mt-2">{plan.description2}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <a
+      href="#contact"
+      class="bg-primary text-xl font-semibold text-dark mt-10 mb-10 px-4 py-2 rounded-xl flex items-center gap-2 justify-center"
+    >
+      CONTACTAR
+    </a>
+  </ContentWrapper>
+</section>
