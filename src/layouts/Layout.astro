@@ -23,6 +23,26 @@ const { title, description, keywords } = Astro.props;
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <ViewTransitions />
+
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      (_smartsupp.key = "e5e700bbd8b99477964b68df83f37a276c01149b"),
+        window.smartsupp ||
+          (function (t) {
+            var s,
+              e,
+              a = (smartsupp = function () {
+                a._.push(arguments);
+              });
+            (a._ = []),
+              (s = t.getElementsByTagName("script")[0]),
+              ((e = t.createElement("script")).type = "text/javascript"),
+              (e.charset = "utf-8"),
+              (e.async = !0),
+              (e.src = "https://www.smartsuppchat.com/loader.js?"),
+              s.parentNode.insertBefore(e, s);
+          })(document);
+    </script>
   </head>
   <body class="relative bg-neutral-950 overflow-x-hidden">
     <Header />
