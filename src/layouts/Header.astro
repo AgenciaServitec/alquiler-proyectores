@@ -1,29 +1,39 @@
 ---
 
 ---
-<header class="flex items-center relative">
-    <span class="text-white text-lg md:text-2xl">VioletVision</span>
-    <button
-            id="hamburger"
-            class="md:hidden text-white absolute right-0 text-xl"
-    >
-        ☰
-    </button>
-    <ul class="hidden md:flex gap-4 text-slate-300 mt-2 ml-20" id="menu">
-        <li><a href="/about" class="hover:text-white">About</a></li>
-        <li><a href="/blog" class="hover:text-white">Blog</a></li>
-        <li><a href="/contact" class="hover:text-white">Contact</a></li>
-        <div class="absolute top-0 right-0 text-slate-300">
-            <span class="cursor-pointer hover:text-white">Login</span>
-            <button
-                    class="cursor-pointer rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 hover:shadow-md transition-shadow hover:shadow-black/50"
+
+<header id="header" class="w-full fixed z-50">
+  <div class="w-full p-4 max-w-[1243px] m-auto">
+    <div class="flex justify-center md:justify-between items-center">
+      <a href="/"
+        ><img
+          class="w-40"
+          src="/images/logo-servitec.webp"
+          alt="Logo de Servitec Peru"
+        /></a
+      >
+      <nav class="hidden md:flex">
+        <ul class="flex gap-4 text-white mt-2 ml-20" id="menu">
+          <li><a href="/#plans">Planes</a></li>
+          <li>
+            <a
+              href="/#contact"
+              class="text-black bg-primary hover:bg-amber-400 transition duration-300 rounded-xl px-6 py-2"
+              >Contacto</a
             >
-                <div
-                        class="flex items-center justify-center bg-neutral-950 back rounded-lg"
-                >
-                    <h1 class="text-white px-2 py-1">Create account</h1>
-                </div>
-            </button>
-        </div>
-    </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
+
+<script>
+  window.onscroll = () => {
+    if (window.scrollY > 35) {
+      document.querySelector("#header").classList.add("backdrop-blur-xl");
+    } else {
+      document.querySelector("#header").classList.remove("backdrop-blur-xl");
+    }
+  };
+</script>

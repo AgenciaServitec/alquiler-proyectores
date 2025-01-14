@@ -1,0 +1,100 @@
+---
+import ContentWrapper from "./ContentWrapper.astro";
+const descriptions = [
+  "Pago Aparte S/.350 por garantía del producto entregados.",
+  "Se hace entrega del producto en nuestro mismo local, si desea la entrega en su domicilio se paga aparte un concepto de traslado.",
+];
+
+const plans = [
+  {
+    image: "/images/plan-images/plan1.webp",
+    text1: "Alquiler por Horas",
+    plan: "1 Hora S/ 45",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan2.webp",
+    text1: "Promociones por Horas",
+    plan: "6 Horas S/ 95",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan3.webp",
+    text1: "Alquiler por Días",
+    plan: "1 Día S/ 180",
+    text2: "3000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan4.webp",
+    text1: "Alquiler por Horas",
+    plan: "1 Hora S/ 100",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan5.webp",
+    text1: "Promociones por Horas",
+    plan: "6 Horas S/ 400",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+  {
+    image: "/images/plan-images/plan6.webp",
+    text1: "Alquiler por Días",
+    plan: "1 Día S/ 750",
+    text2: "4200 a 5000 lúmenes",
+    description1: descriptions[0],
+    description2: descriptions[1],
+  },
+];
+---
+
+<section class="bg-quaternary">
+  <ContentWrapper>
+    <h2 class="text-center text-primary text-4xl font-bold my-10">
+      NUESTROS PLANES
+    </h2>
+    <div class="grid grid-cols-fill justify-items-center gap-8">
+      {
+        plans.map((plan) => (
+          <article class="bg-red-500 rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 h-auto transition-transform duration-200 ease-in-out hover:scale-105">
+            <div class="flex flex-col bg-quaternary text-slate-300 rounded-lg h-full overflow-hidden">
+              <img
+                src={plan.image}
+                alt="plan-image"
+                class="h-56 rounded-b-none"
+              />
+              <div class="flex flex-col gap-6 px-8 py-6">
+                <div class="text-center">
+                  <h2>{plan.text1}</h2>
+                  <h1 class="text-primary text-3xl md:text-2xl font-bold">
+                    {plan.plan}
+                  </h1>
+                  <h2>{plan.text2}</h2>
+                </div>
+                <ul class="flex flex-col gap-2 text-pretty list-disc">
+                  <li>{plan.description1}</li>
+                  <li>{plan.description2}</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <a
+      href="#contact"
+      class="bg-primary hover:bg-amber-400 transition duration-300 text-xl font-semibold text-dark mt-10 mb-10 px-4 py-2 rounded-xl flex items-center gap-2 justify-center"
+    >
+      CONTÁCTANOS
+    </a>
+  </ContentWrapper>
+</section>
