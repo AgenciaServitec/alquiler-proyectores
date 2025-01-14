@@ -1,24 +1,23 @@
 ---
-import { Icon } from "astro-icon/components";
+
 ---
 
 <header id="header" class="w-full fixed z-50">
   <div class="w-full p-4 max-w-[1243px] m-auto">
-    <div class="flex justify-between items-center">
-      <img
-        class="w-48"
-        src="/images/logo-servitec.webp"
-        alt="Logo de Servitec Peru"
-      />
-      <button id="hamburger" class="md:hidden bg-white p-1 text-xl rounded-xl">
-        <Icon name="mdi:menu" class="text-black text-4xl" />
-      </button>
+    <div class="flex justify-center md:justify-between items-center">
+      <a href="/"
+        ><img
+          class="w-40"
+          src="/images/logo-servitec.webp"
+          alt="Logo de Servitec Peru"
+        /></a
+      >
       <nav class="hidden md:flex">
-        <ul class="flex gap-4 text-slate-300 mt-2 ml-20" id="menu">
-          <li><a href="#plans" class="hover:text-white">Planes</a></li>
+        <ul class="flex gap-4 text-white mt-2 ml-20" id="menu">
+          <li><a href="/#plans">Planes</a></li>
           <li>
             <a
-              href="#contact"
+              href="/#contact"
               class="text-black bg-[#FFF100] rounded-xl px-6 py-2">Contacto</a
             >
           </li>
@@ -31,9 +30,9 @@ import { Icon } from "astro-icon/components";
 <script>
   window.onscroll = () => {
     if (window.scrollY > 35) {
-      document.querySelector("#header").classList.add("backdrop-blur-sm");
+      document.querySelector("#header").classList.add("backdrop-blur-xl");
     } else {
-      document.querySelector("#header").classList.remove("backdrop-blur-sm");
+      document.querySelector("#header").classList.remove("backdrop-blur-xl");
     }
   };
 </script>
