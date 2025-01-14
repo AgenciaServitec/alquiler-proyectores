@@ -74,10 +74,10 @@ const ContactFormComponent = () => {
         />
       </div>
       <button
-        className={`${loading ? "disabled" : ""} h-12 rounded-xl ${loading ? "pointer-events-none" : "pointer-events-auto"} ${loading ? "gray" : "bg-primary"} font-semibold" type="submit`}
+        className={`${loading ? "disabled" : ""} h-12 rounded-xl ${loading ? "pointer-events-none" : "pointer-events-auto"} ${loading ? "bg-gray-400" : "bg-primary hover:bg-amber-400 transition duration-300"} text-xl font-semibold type="submit`}
         disabled={loading}
       >
-        Enviar
+        ENVIAR
       </button>
       {responseMessage && (
         <p className="text-red-600 text-sm">{responseMessage}</p>
