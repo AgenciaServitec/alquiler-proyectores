@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Background from "../components/Background.astro";
+import BrandSection from "../components/BrandSection.astro";
+import CarouselSection from "../components/CarouselSection.astro";
+import MainSection from "../components/MainSection.astro";
+import ContactFormComponent from "../components/ContactFormComponent.jsx";
+import PlansSection from "../components/PlansSection.astro";
+import ContentWrapper from "../components/ContentWrapper.astro";
+---
+
+<Layout
+  title="Alquiler de proyectores"
+  description="Alquila proyectores de alta calidad para eventos, reuniones y presentaciones. Ofrecemos una amplia variedad de modelos con resolución HD y 4K, al mejor precio y con soporte técnico garantizado. Contáctanos para una experiencia visual impecable."
+  keywords="alquiler de proyectores, renta de proyectores, proyectores HD, proyectores 4K, alquiler para eventos, proyectores para presentaciones, proyectores económicos, proyectores con soporte técnico, renta de proyectores para oficinas, proyectores para reuniones"
+>
+  <Background />
+  <MainSection />
+  <BrandSection />
+  <CarouselSection />
+  <PlansSection />
+  <section id="contact" class="bg-secondary py-6">
+    <ContentWrapper>
+      <h2 class="text-center text-pretty text-primary text-4xl font-bold my-10">
+        ¿NECESITAS UN PROYECTOR? ESCRÍBENOS
+      </h2>
+      <ContactFormComponent client:load />
+    </ContentWrapper>
+  </section>
+</Layout>
