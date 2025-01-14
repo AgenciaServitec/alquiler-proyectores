@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import Background from "../components/Background.astro";
+---
+
+<Layout title="Envío exitoso">
+  <Background />
+  <section class="flex flex-col items-center py-20 text-white">
+    <Icon name="mdi:success-circle" class="text-primary text-8xl" />
+    <div class="flex flex-col items-center gap-6 mt-10">
+      <span class="text-center text-4xl font-semibold">
+        Mensaje enviado exitosamente
+      </span>
+      <span class="text-center text-xl">En breve nos comunicaremos contigo</span
+      >
+    </div>
+    <a
+      href="/"
+      class="bg-primary hover:bg-amber-500 text-xl text-black font-semibold text-dark px-4 py-2 rounded-xl mt-5 gap-2"
+    >
+      IR A INICIO
+    </a>
+  </section>
+</Layout>
