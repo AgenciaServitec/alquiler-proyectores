@@ -74,16 +74,17 @@ export const FormContact = ({ onSetIsVisibleModal }) => {
     });
 
   const mapContactData = (formData) => ({
-    contact: {
+    category: "contact",
+    client: {
       fullName: formData.firstName,
       email: formData.email,
       phone: {
         prefix: formData.countryCode,
         number: formData.phoneNumber,
       },
-      message: formData.message,
-      hostname: window.location.hostname || "alquiler-de-proyectores.com",
     },
+    message: formData.message,
+    hostname: window.location.hostname || "alquiler-de-proyectores.com",
   });
 
   return (
