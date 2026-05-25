@@ -63,7 +63,7 @@ export const FormContact = ({ onSetIsVisibleModal }) => {
   };
 
   const fetchSendEmail = async (contact) =>
-    await fetch(`${currentConfig.sendingEmailsApiUrl}/emails/contact`, {
+    await fetch(`${currentConfig.sendingEmailsApiUrl}/entries/contact`, {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": null,
@@ -75,21 +75,17 @@ export const FormContact = ({ onSetIsVisibleModal }) => {
 
   const mapContactData = (formData) => ({
     contact: {
-      firstName: formData.firstName,
-      lastName: "",
+      fullName: formData.firstName,
       email: formData.email,
       phone: {
+        prefix: formData.countryCode,
         number: formData.phoneNumber,
-        countryCode: formData.countryCode,
       },
       message: formData.message,
       hostname: window.location.hostname || "alquiler-de-proyectores.com",
     },
   });
-  // todo: agregar limpieza de imput
-  // const cleanContactForm = (formData) => {
-  //   formData.firstName = "";
-  // };
+
   return (
     <Form onSubmit={handleSubmit(onSubmitFetchContacts)}>
       <Row gutter={[16, 27]}>
