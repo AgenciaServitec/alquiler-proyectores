@@ -19,7 +19,7 @@
         "youtube": "https://www.youtube.com/watch?v=FNMfFy4iKvg"
       },
       "directions": {
-        "local1": "Vargas 179 Piso 1 - Chorrillos, Perú",
+        "local1": "Ca. Coronel Bermudez 113, Lima 15064",
         "local2": "-"
       },
       "poweredBy": {
@@ -39,7 +39,7 @@
       "appId": "1:1098379309371:web:fa2e8d9ab9ecf49b30071e",
       "measurementId": "G-GJHNGG7Q82"
     },
-    "sendingEmailsApiUrl": "https://api-servitecsales.web.app",
+    "sendingEmailsApiUrl": "https://api-servitec-peru.web.app",
     "buckets": {}
   },
   "production": {
@@ -53,7 +53,7 @@
       "appId": "1:1098379309371:web:fa2e8d9ab9ecf49b30071e",
       "measurementId": "G-GJHNGG7Q82"
     },
-    "sendingEmailsApiUrl": "https://api-servitecsales.web.app",
+    "sendingEmailsApiUrl": "https://api-servitec-peru.web.app",
     "buckets": {}
   }
 }

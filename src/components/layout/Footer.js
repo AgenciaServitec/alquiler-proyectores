@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { capitalize } from "lodash";
-import {common, contactData} from "../../firebase";
+import { common, contactData } from "../../firebase";
 import { lighten } from "polished";
 import { mediaQuery } from "../../styles/constants/mediaQuery";
 
@@ -37,7 +37,7 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
               </div>
               <div className="text-item">
-                <span>gerencia@servitec.com</span>
+                <span>contacto@servitecperu.com</span>
                 <p>Soporte en Linea</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
               <div className="text-item">
-                <span>Vargas 179 Piso 1 - Chorrillos</span>
+                <span>Ca. Coronel Bermudez 113, Lima 15064</span>
                 <p>Lima - Perú</p>
               </div>
             </div>
